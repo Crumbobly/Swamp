@@ -1,0 +1,7 @@
+# Whisper
+
+## Package
+```
+./gradlew distZip
+```
+
