@@ -12,8 +12,9 @@
 </head>
 
 <body>
+
 <header class="header">
-    <div class="head">
+    <div class="head container">
 
         <p class="head">CHATDROP</p>
 
