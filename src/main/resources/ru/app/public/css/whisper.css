@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, input, textarea, select, button {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+div.head{
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    background-color: #dddf00;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: flex-start;
+    min-height: 800px;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+p.head{
+    font-family: "Monoton", sans-serif;
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+div.des p{
+    margin-left: 170px;
+    margin-right: 60px;
+    font-size: 16px;
+    text-align: center;
+}
+div.des{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
