@@ -1,9 +1,30 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <title>My Framer Site</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/whisper.css" rel="stylesheet">
+    <script src="/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <div class="head">
+
+        <p class="head">CHATDROP</p>
+
+        <div class="des">
+            <p>Real-time Connections.</p>
+            <p>Join now</p>
+            <p>Friday, June 28, 2024</p>
+        </div>
+
+    </div>
+</header>
 
 </body>
 </html>
