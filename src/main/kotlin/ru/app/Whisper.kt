@@ -18,7 +18,7 @@ fun main() {
     val routers = ru.app.routers.Router().router(htmlView)
     val printingApp: HttpHandler = routers
 
-    val port = 8080
+    val port = 5000
     val server = printingApp.asServer(Netty(port)).start()
 
     println("http://localhost:$port")
