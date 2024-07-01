@@ -46,7 +46,7 @@ body{
 
 header{
     background-color: #dddf00;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 footer p{
@@ -77,6 +77,16 @@ button.yellow{
     --bs-btn-hover-color: #c9cb00;
 }
 
+a.transit{
+    background-color: #dddf00;
+    border-color: #dddf00;
+    --bs-btn-hover-bg: #dddf00;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-active-bg: black;
+    --bs-btn-active-color: #dddf00;
+
+}
 
 
 p.justify{
