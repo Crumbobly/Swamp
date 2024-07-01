@@ -1,8 +1,6 @@
 
 @font-face { font-family: "Finger Paint"; src: url("../fonts/FingerPaint-Regular.ttf"); }
 @font-face { font-family: "Text Font"; src: url("../fonts/text_font3.ttf"); }
-@font-face { font-family: "WOX"; src: url("../fonts/WOX-Striped_Triple_Demo.otf"); }
-@font-face { font-family: "Splite Sans Mono"; src: url("../fonts/Spl"); }
 
 
 html{
@@ -29,11 +27,18 @@ h2.text-yellow{
     color: #c9cb00;
 }
 
+h2.text-green{
+    color: #2b9348;
+}
+
 p.text-green{
     color: #2b9348;
     font-size: 20px;
 }
 
+a{
+    color: #2b9348;
+}
 
 body{
     background-color: black;
@@ -46,7 +51,7 @@ header{
 
 footer p{
     font-size: 16px;
-    font-family: sans;
+    font-family:  "Text Font", sans-serif;
     font-weight: bold;
     color: #c9cb00;
 }
@@ -58,6 +63,13 @@ main p{
     color: #c9cb00;
 }
 
+header p {
+    font-size: 16px;
+    font-family: "Text Font", sans-serif;
+    font-weight: bold;
+
+}
+
 button.yellow{
     background-color: #c9cb00;
     --bs-btn-hover-bg: black;
@@ -65,12 +77,7 @@ button.yellow{
     --bs-btn-hover-color: #c9cb00;
 }
 
-p {
-    font-size: 14px;
-    font-family: "Text Font", sans-serif;
-    font-weight: bold;
 
-}
 
 p.justify{
     text-align: justify;
