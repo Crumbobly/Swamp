@@ -2,15 +2,11 @@
 @font-face { font-family: "Finger Paint"; src: url("../fonts/FingerPaint-Regular.ttf"); }
 @font-face { font-family: "Text Font"; src: url("../fonts/text_font3.ttf"); }
 @font-face { font-family: "WOX"; src: url("../fonts/WOX-Striped_Triple_Demo.otf"); }
+@font-face { font-family: "Splite Sans Mono"; src: url("../fonts/Spl"); }
 
 
 html{
     scrollbar-width: none;
-}
-
-p-6{
-    padding: 25%;
-    margin: 25%;
 }
 
 h1 {
@@ -18,19 +14,26 @@ h1 {
     font-size: 200px;
     font-weight: 400;
     font-style: normal;
-    color: black;
     text-align: center;
     text-transform: uppercase;
 }
 
 h2 {
-    font-family: "Text Font", sans-serif;
-    font-size: 44px;
+    font-family: "Finger Paint", "Text Font", sans-serif;
+    font-size: 38px;
     font-weight: 400;
     font-style: normal;
-    color: #dddf00;
-    width: 40%;
 }
+
+h2.text-yellow{
+    color: #c9cb00;
+}
+
+p.text-green{
+    color: #2b9348;
+    font-size: 20px;
+}
+
 
 body{
     background-color: black;
@@ -38,13 +41,28 @@ body{
 
 header{
     background-color: #dddf00;
+    height: 100vh;
+}
+
+footer p{
+    font-size: 16px;
+    font-family: sans;
+    font-weight: bold;
+    color: #c9cb00;
 }
 
 main p{
-    font-size: 14px;
-    font-family: "Text Font", sans-serif;
+    font-size: 18px;
+    font-family: "Finger Paint", "Text Font", sans-serif;
     font-weight: bold;
-    color: #dddf00;
+    color: #c9cb00;
+}
+
+button.yellow{
+    background-color: #c9cb00;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: #c9cb00;
+    --bs-btn-hover-color: #c9cb00;
 }
 
 p {
@@ -52,5 +70,10 @@ p {
     font-family: "Text Font", sans-serif;
     font-weight: bold;
 
+}
+
+p.justify{
+    text-align: justify;
+    text-align-last: center;
 }
 

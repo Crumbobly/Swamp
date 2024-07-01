@@ -26,32 +26,22 @@
 
     <div class="container-fluid m-0 p-0">
 
+        <h1 class="m-0 text-black">WHISPER</h1>
 
-        <h1 class="finger-paint-regular">WHISPER</h1>
+        <div class="container text-center text-black">
 
-        <div class="container-fluid d-flex justify-content-around text-center py-4 ">
-
-            <div class="row row-cols-3">
-                <!--      мб обернуть каждый в div          -->
-
+            <div class="row row-cols-3 mb-5">
                 <p class="col">Анонимная чат-рулетка</p>
                 <p class="col">Присоединяйся сейчас!</p>
                 <p class="col">Пятница, Июнь 28, 2024</p>
-
-                <div class="col">
-                    <img src="images/keyboard.jpg" alt="Man whisper" width="420" class="rounded-4">
-                </div>
-                <div class="col">
-                    <img src="images/bw_whisper.jpg" alt="Man whisper" width="480" class="rounded-4">
-                </div>
-                <div class="col">
-                    <img src="images/phone_in_hand.jpg" alt="Man whisper" width="420" class="rounded-4">
-                </div>
             </div>
 
+            <h2 class="mt-5 p-5">
+                Добро пожаловать в анонимную чат рулетку! <br />  <br /> Здесь вы можете общаться с незнакомыми людьми и мгновенно меняться собеседниками. Наслаждайтесь общением без ограничений и предвзятости!
+            </h2>
         </div>
 
-        <div class="container text-center py-2">
+        <div class="container text-center">
             <input type="image" onclick="document.getElementById('main').scrollIntoView();" src="./images/arrow_down.png" alt="дальше" width="50" class="opacity-75"/>
         </div>
 
@@ -59,14 +49,60 @@
 </header>
 
 <main id="main">
-    <div class="container p-5 mx-auto" style="height: 1000px">
-        <p>Начните общаться прямо сейчас</p>
-        <h2>
-            Присоединяйся к революции!
-            Дайте волю своим мыслям и идеям. Будьте спонтанны и мгновенно общайтесь с единомышленниками по всему миру.
-        </h2>
+    <div class="container py-5">
+
+        <div class="container d-flex justify-content-center text-center">
+
+            <div class="w-25 align-self-end">
+                <h2 class="text-yellow text-start py-5">
+                    Почему мы?
+                </h2>
+                <img src="images/keyboard.jpg" alt="Man whisper" class="rounded-5 w-100">
+                <p class="pt-3 text-green text-start">Текст & Голос</p>
+                <p class="text-start">Мы ценим вашу безопасность, поэтому все данные разговоров и чатов надёжно защищены</p>
+            </div>
+            <div class="w-25 mx-5 align-self-end">
+                <img src="images/bw_whisper.jpg" alt="Man whisper" class="rounded-5 w-100 ">
+                <p class="pt-3 text-green text-start">Полная анонимность</p>
+                <p class="text-start">Мы ценим вашу безопасность, поэтому все данные разговоров и чатов надёжно защищены</p>
+            </div>
+            <div class="w-25 align-self-end">
+                <img src="images/phone_in_hand.jpg" alt="Man whisper" class="rounded-5 w-100">
+                <p class="pt-3 text-green text-start">Шифрование данных</p>
+                <p class="text-start">Мы ценим вашу безопасность, поэтому все данные разговоров и чатов надёжно защищены</p>
+
+            </div>
+        </div>
     </div>
+
+    <div class="container py-5 text-center w-50">
+        <h2 class="text-yellow pt-5">
+            Начни общаться прямо сейчас!
+        </h2>
+        <p class="p-3 justify">
+            Пришло время выйти из-под имени пользователя. Давайте вести настоящие, содержательные разговоры. Нажмите ниже, чтобы начать общение.
+        </p>
+        <button type="button" class="btn yellow">
+            Начать общение
+        </button>
+    </div>
+
 </main>
+
+<footer id="footer">
+    <div class="container d-flex justify-content-around my-5 py-5">
+        <p>
+            © 2024 Whisper
+        </p>
+        <p>
+            Все права защищены
+        </p>
+        <p>
+            Pet-проект
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>
