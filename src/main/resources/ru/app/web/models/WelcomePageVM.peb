@@ -1,31 +1,110 @@
+{# WelcomePageVM.peb #}
+
+{# @pebvariable name="model" type="ru.app.web.models.WelcomePageVM" #}
+
 <!doctype html>
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Framer Site</title>
+    <title>Whisper: Анонимная чат рулетка</title>
 
+    <link href="/fonts/FingerPaint-Regular.ttf" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/whisper.css" rel="stylesheet">
+    <link href="/css/WelcomePage.css" rel="stylesheet">
     <script src="/js/bootstrap.bundle.js"></script>
+
 </head>
 
 <body>
 
 <header class="header">
-    <div class="head container">
 
-        <p class="head">CHATDROP</p>
+    <div class="container-fluid pt-3 d-flex justify-content-end">
+        <a type="button" class="btn btn-outline-dark me-3 transit" href="./login">Вход\Регистрация</a>
+    </div>
 
-        <div class="des">
-            <p>Real-time Connections.</p>
-            <p>Join now</p>
-            <p>Friday, June 28, 2024</p>
+    <div class="container-fluid m-0 p-0">
+
+        <h1 class="m-0 text-black">WHISPER</h1>
+
+        <div class="container text-center text-black">
+
+            <div class="row row-cols-3 mb-5">
+                <p class="col">Анонимная чат-рулетка</p>
+                <p class="col">Присоединяйся сейчас!</p>
+                <p class="col">{{ model.currentDay }} {{ model.currentMount }}, {{model.currentDayName}}, {{ model.currentYear }}</p>
+            </div>
+
+            <h2 class="mt-5 p-5">
+                Добро пожаловать в анонимную чат рулетку! <br />  <br /> Здесь вы можете общаться с незнакомыми людьми и мгновенно меняться собеседниками. Наслаждайтесь общением без ограничений и предвзятости!
+            </h2>
+        </div>
+
+        <div class="container text-center">
+            <input type="image" onclick="document.getElementById('main').scrollIntoView();" src="/images/arrow_down.png" alt="дальше" width="50" class="opacity-75"/>
         </div>
 
     </div>
 </header>
+
+<main id="main">
+    <div class="container py-5">
+
+        <div class="container d-flex justify-content-center text-center">
+
+            <div class="w-25 align-self-end">
+                <h2 class="text-yellow text-start py-5">
+                    Почему мы?
+                </h2>
+                <img src="/images/type_chat.jpg" alt="Man whisper" class="rounded-5 w-100">
+                <p class="pt-3 text-green text-start">Текст & Голос</p>
+                <p class="text-start">Вы можете общаться одним из двух способов: либо голосовым чатом, либо текстовым</p>
+            </div>
+            <div class="w-25 mx-5 align-self-end">
+                <img src="/images/anon.png" alt="Man whisper" class="rounded-5 w-100 ">
+                <p class="pt-3 text-green text-start">Полная анонимность</p>
+                <p class="text-start">Для регистрации аккаунта ненужно вводить личные данных, достаточно придумать логин и пароль</p>
+            </div>
+            <div class="w-25 align-self-end">
+                <img src="/images/security.jpg" alt="Man whisper" class="rounded-5 w-100">
+                <p class="pt-3 text-green text-start">Шифрование данных</p>
+                <p class="text-start">Мы ценим вашу безопасность, поэтому все данные разговоров и чатов надёжно защищены</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 text-center w-50">
+        <h2 class="text-green pt-5">
+            Начни общаться прямо сейчас!
+        </h2>
+        <p class="p-3 justify">
+            Пришло время выйти из-под имени пользователя. Давайте вести настоящие, содержательные разговоры. Нажмите ниже, чтобы начать общение.
+        </p>
+        <a type="button" class="btn yellow" href="./login">
+            Начать общение
+        </a>
+    </div>
+
+</main>
+
+<footer id="footer">
+    <div class="container d-flex justify-content-between mb-2 mt-5 py-5">
+        <p class="text-start">
+            © {{ model.currentYear }} Whisper. Все права защищены
+            <br />
+            <a class="text-green" href="./FAQ">
+                FAQ
+            </a>
+        </p>
+        <p>
+            Pet-проект
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>

@@ -70,7 +70,7 @@ header p {
 
 }
 
-button.yellow{
+a.yellow{
     background-color: #c9cb00;
     --bs-btn-hover-bg: black;
     --bs-btn-hover-border-color: #c9cb00;
@@ -87,7 +87,6 @@ a.transit{
     --bs-btn-active-color: #dddf00;
 
 }
-
 
 p.justify{
     text-align: justify;
