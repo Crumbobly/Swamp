@@ -62,7 +62,7 @@
             <h2 class="text-yellow py-5 size2">Почему мы?</h2>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 mb-5" >
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5" >
             <div>
                 <img src="/images/type_chat.jpg" alt="Man whisper" class="rounded-5 w-100">
                 <p class="pt-3 text-green text-start size3">Текст & Голос</p>
@@ -110,3 +110,6 @@
         </p>
     </div>
 </footer>
+
+</body>
+</html>

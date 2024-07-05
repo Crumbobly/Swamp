@@ -1,0 +1,57 @@
+
+
+
+body{
+    background-color: #222629;
+}
+
+body::after {
+    content: "";
+    background-image: url('../images/bg_main.png');
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.left_slide{
+    position: relative;
+    height: 100vh;
+    width: 1px;
+
+    background: linear-gradient(to bottom, #86C232 25%, #86C232 50%, #474B4F 50%);
+}
+
+.left_slide::before, .left_slide::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px; /* диаметр точки */
+    height: 8px; /* диаметр точки */
+    background-color: #61892F; /* цвет точки */
+    border-radius: 50%; /* чтобы точка была круглой */
+    z-index: 1;
+}
+
+.left_slide::before {
+    top: 25%; /* позиционируем первую точку на четверть высоты */
+}
+
+.left_slide::after {
+    top: 50%; /* позиционируем вторую точку на три четверти высоты */
+}
+
+h1{
+    color: white ;
+    font-family: text_font1;
+}
+
+h2{
+    color: #61892F;
+    font-size: 22px;
+}
