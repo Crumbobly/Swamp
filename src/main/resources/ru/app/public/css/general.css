@@ -3,3 +3,13 @@
 @font-face { font-family: "LXGW"; src: url("../fonts/LXGW.ttf"); }
 @font-face { font-family: "Moneseratt"; src: url("../fonts/MontserratAlternates.ttf"); }
 @font-face { font-family: "Underdog"; src: url("../fonts/Underdog.ttf"); }
+
+:root {
+    --dark-green:#61892F;
+    --light-green:#86C232;
+    --dark-grey:#222629;
+    --medium-grey:#474B4F;
+    --light-grey:#6B6E70;
+    --white-grey: #919191;
+    --white: #FFFFFF;
+}
