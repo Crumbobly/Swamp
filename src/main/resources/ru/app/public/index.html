@@ -39,14 +39,14 @@
             <div class="container my-5">
 
                 <div class="row">
-                    <div class="col-8 col-md-6 offset-2 offset-md-3" id="login-form">
+                    <div class="col-8 col-md-6 offset-2 offset-md-3" id="login-reg-form">
 
                         <ul class="nav nav-pills justify-content-start" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="home" aria-selected="true">Вход</button>
+                                <button class="nav-link active rounded-0 rounded-top" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="home" aria-selected="true">Вход</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="profile" aria-selected="false">Регистрация</button>
+                                <button class="nav-link rounded-0 rounded-top" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="profile" aria-selected="false">Регистрация</button>
                             </li>
                         </ul>
 
@@ -56,28 +56,29 @@
                             <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                                 <form method="post" action="/login">
 
-                                    <div class="">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <div class="mb-1">
+                                        <label for="exampleInputEmail1" class="form-label text-start d-flex">Почта / логин / номер телефона</label>
                                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                     </div>
-                                    <div class="">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <div class="mb-2">
+                                        <label for="exampleInputPassword1" class="form-label text-start d-flex">Пароль</label>
                                         <input type="password" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    <div class=" form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label text-start d-flex" for="flexSwitchCheckDefault">Запомнить меня</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Вход</button>
 
                                 </form>
                             </div>
+
                             <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
                                 <form method="post" action="/register">
 
                                 </form>
                             </div>
+
                         </div>
 
                     </div>

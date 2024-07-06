@@ -5,6 +5,7 @@ body{
     background-color: var(--dark-grey);
     height: 100vh;
     position: relative;
+    font-family: LXGW, sans-serif;
 }
 
 body::after, body::before{
@@ -110,35 +111,47 @@ h2{
 
 label{
     color: var(--light-green);
-}
-
-#login-form{
     font-size: 1.2vmax;
 }
 
-#login-form .nav-link{
+#login-reg-form{
+    font-size: 1.2vmax;
+}
+
+#login-reg-form .nav-link{
     background-color: var(--dark-grey);
     color: var(--white-grey);
 }
 
-#login-form .nav-link:hover{
+#login-reg-form .nav-link:hover{
     background-color: var(--light-grey);
 }
 
 
-#login-form .nav-link.active{
+#login-reg-form .nav-link.active{
     color: var(--white);
 }
 
-/*#login-form .nav-item {*/
-/*    border: none;*/
-/*    background: transparent;*/
-/*    opacity: 1;*/
-/*    border-bottom: 2px solid #eec111;*/
-/*    color: #fff;*/
-/*}*/
+#login-reg-form input.form-control{
+    background-color: var(--white);
+}
 
-#login-form .strip {
+#login-reg-form input.form-control:focus{
+    border-color: var(--light-green);
+    box-shadow: 0 1px 1px var(--light-green) inset, 0 0 4px var(--dark-green);
+    outline: 0 none;
+}
+
+
+#login-reg-form .form-check-input{
+    background-color: var(--white);
+    border-color: var(--dark-grey);
+    box-shadow: 0 1px 1px var(--light-green) inset, 0 0 4px var(--dark-green);
+    outline: 0 none;
+}
+
+
+#login-reg-form .strip {
     background-color: var(--dark-green);
     height: 2px;
     width: 100%;
