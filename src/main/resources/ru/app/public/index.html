@@ -23,9 +23,9 @@
 
     <div class="container-fluid d-flex align-items-center">
 
-        <div class="left_slide mx-lg-5 mx-md-3 mx-sm-1"></div>
+        <div class="left_slide" id="left_slide"></div>
 
-        <div class="container-fluid text-center align-self-start my-5">
+        <div class="container-fluid text-center align-self-start my-5 mx-lg-5 mx-md-3 mx-sm-1">
 
             <div class="px-3">
                 <h1 class="mb-5">Добро пожаловать в Болото!</h1>
@@ -52,21 +52,21 @@
 
                         <div class="strip"></div>
 
-                        <div class="tab-content mt-4" id="myTabContent">
+                        <div class="tab-content mt-4" id="tabContent">
                             <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                                 <form method="post" action="/login">
 
                                     <div class="mb-1">
-                                        <label for="exampleInputEmail1" class="form-label text-start d-flex">Почта / логин / номер телефона</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="inputLoginPassEmail_login" class="form-label text-start d-flex">Почта / логин / номер телефона</label>
+                                        <input type="text"  class="form-control" id="inputLoginPassEmail_login" aria-describedby="emailHelp" required>
                                     </div>
                                     <div class="mb-2">
-                                        <label for="exampleInputPassword1" class="form-label text-start d-flex">Пароль</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <label for="inputPassword_login" class="form-label text-start d-flex">Пароль</label>
+                                        <input type="password" class="form-control" id="inputPassword_login" required>
                                     </div>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label text-start d-flex" for="flexSwitchCheckDefault">Запомнить меня</label>
+                                        <input class="form-check-input" type="checkbox" id="rememberMeCheckbox_login">
+                                        <label class="form-check-label text-start d-flex" for="rememberMeCheckbox_login">Запомнить меня</label>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Вход</button>
 
@@ -88,6 +88,29 @@
                                         <input type="password" class="form-control" id="exampleInputPassword11">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+
+                                    <div class="mb-1">
+                                        <label for="inputLogin_register" class="form-label text-start d-flex">Логин</label>
+                                        <input type="text" class="form-control" id="inputLogin_register" aria-describedby="emailHelp" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="inputEmail_register" class="form-label text-start d-flex">Почта</label>
+                                        <input type="email" class="form-control" id="inputEmail_register" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputPhone_register" class="form-label text-start d-flex">Номер телефона*</label>
+                                        <input type="tel" class="form-control" id="inputPhone_register">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="inputPassword_register" class="form-label text-start d-flex">Пароль</label>
+                                        <input type="password" class="form-control" id="inputPassword_register" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="inputPasswordRepeat_register" class="form-label text-start d-flex">Повторите пароль</label>
+                                        <input type="password" class="form-control" id="inputPasswordRepeat_register" required>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Регистрация</button>
 
                                 </form>
                             </div>
