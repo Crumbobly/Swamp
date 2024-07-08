@@ -13,3 +13,51 @@
     --white-grey: #919191;
     --white: #FFFFFF;
 }
+
+h1{
+    color: var(--white);
+    font-family: text_font1, sans-serif;
+    font-size: 4vmax;
+}
+
+h2{
+    color: var(--light-green);
+    font-size: 1.8vmax;
+}
+
+h3{
+    color: var(--light-green);
+    font-size: 1.6vmax;
+}
+
+label{
+    color: var(--light-green);
+    font-size: 1.2vmax;
+}
+
+p{
+    color: var(--light-grey);
+    font-size: 1vmax;
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        font-size: 4.4vmax;
+    }
+
+    h2{
+        font-size: 2vmax;
+    }
+
+    h3{
+        font-size: 2vmax;
+    }
+
+    label{
+        font-size: 1.6vmax;
+    }
+
+    p{
+        font-size: 1.4vmax;
+    }
+}

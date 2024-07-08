@@ -1,9 +1,4 @@
 
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; // Check https://jquery.com/ for the current version
-document.getElementsByTagName('head')[0].appendChild(script);
-
-
 let currTabIndex = 0;
 
 // Функция паузы
@@ -34,4 +29,21 @@ document.getElementById('login-tab').addEventListener('click', async function() 
         }
     }
     currTabIndex = 0;
+});
+
+
+// Для капчи
+function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+}
+
+document.getElementById('submit_button').addEventListener('click', function() {
+
+    // Удаляем div с формой регистрации
+    const registrationDiv = document.getElementById('formDiv');
+    registrationDiv.hidden = true;
+
+    // Показываем div с подтверждением аккаунта
+    const confirmationDiv = document.getElementById('confirmationDiv');
+    confirmationDiv.hidden = false;
 });
