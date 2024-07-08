@@ -25,7 +25,7 @@
 
         <div class="left_slide" id="left_slide"></div>
 
-        <div class="container-fluid text-center align-self-start my-5 mx-lg-5 mx-md-3 mx-sm-1">
+        <div class="container-fluid text-center align-self-start mt-5 mb-md-5 mx-lg-5 mx-md-3 mx-sm-1">
 
             <div class="px-3">
                 <h1 class="mb-5">Добро пожаловать в Болото!</h1>
@@ -56,7 +56,7 @@
                             <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                                 <form method="post" action="/login">
 
-                                    <div class="mb-1">
+                                    <div class="mb-2">
                                         <label for="inputLoginPassEmail_login" class="form-label text-start d-flex">Почта / логин / номер телефона</label>
                                         <input type="text"  class="form-control" id="inputLoginPassEmail_login" aria-describedby="emailHelp" required>
                                     </div>
@@ -75,17 +75,14 @@
 
                             <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
                                 <form method="post" action="/register">
-                                    <div class="mb-1">
-                                        <label for="inputLogin_register" class="form-label text-start d-flex">Логин</label>
-                                        <input type="text" class="form-control" id="inputLogin_register" aria-describedby="emailHelp" required>
+                                    <div class="mb-0">
+                                        <label for="inputLogin_register" class="form-label  d-flex">Логин</label>
+                                        <input type="text" class="form-control" id="inputLogin_register" required>
+                                        <p id="loginHelp" class="text-start mb-2" >Логин необходим для того, чтобы другие люди могли отличить вас. В дальнейшем его нельзя будет изменить.</p>
                                     </div>
                                     <div class="mb-2">
                                         <label for="inputEmail_register" class="form-label text-start d-flex">Почта</label>
                                         <input type="email" class="form-control" id="inputEmail_register" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="inputPhone_register" class="form-label text-start d-flex">Номер телефона*</label>
-                                        <input type="tel" class="form-control" id="inputPhone_register">
                                     </div>
                                     <div class="mb-2">
                                         <label for="inputPassword_register" class="form-label text-start d-flex">Пароль</label>

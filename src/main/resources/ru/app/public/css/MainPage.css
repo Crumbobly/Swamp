@@ -95,6 +95,12 @@ label{
     font-size: 1.2vmax;
 }
 
+p{
+    color: var(--light-grey);
+    font-size: 1vmax;
+}
+
+
 #login-reg-form{
     font-size: 1.2vmax;
 }
