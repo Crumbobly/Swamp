@@ -14,6 +14,33 @@
     --white: #FFFFFF;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    font-family: LXGW, sans-serif;
+    background-color: var(--dark-grey);
+}
+
+body::after, body::before{
+
+    background-repeat: no-repeat;
+
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.25;
+    z-index: -1;
+    height: 50vh;
+
+    background-size: contain;
+    pointer-events: none;
+
+}
+
 h1{
     color: var(--white);
     font-family: text_font1, sans-serif;
