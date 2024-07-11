@@ -32,7 +32,7 @@ fun main() {
         dbPassword(env)
     )
 
-    DatabaseFunc().addUser("login1", "email1", "password1")
+//    DatabaseFunc().addUser("login1", "email1", "password1")
 
 
     val templates = ContextAwarePebbleTemplates().HotReload("src/main/resources")

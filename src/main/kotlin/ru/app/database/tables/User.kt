@@ -9,7 +9,7 @@ import org.jetbrains.exposed.dao.id.IntIdTable
 
 object Users : IntIdTable() {
     val login = varchar("login", 50)
-    val email = varchar("email", 100)
+    val email = varchar("email", 100).nullable()
     val password = varchar("password", 100)
 }
 
