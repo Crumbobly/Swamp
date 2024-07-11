@@ -1,4 +1,8 @@
-/* general */
+
+@font-face { font-family: "text_font1"; src: url("../fonts/text_font1.ttf"); }
+@font-face { font-family: "LXGW"; src: url("../fonts/LXGW.ttf"); }
+@font-face { font-family: "Underdog"; src: url("../fonts/Underdog.ttf"); }
+
 
 :root {
     --dark-green:#61892F;
@@ -30,6 +34,22 @@ p{
     font-size: 1vmax;
 }
 
+.white-img{
+    fill: var(--white)
+}
+
+
+.navbar-nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+nav a{
+    font-family: Underdog, sans-serif;
+    font-weight: lighter;
+}
 
 
 .bgr{
