@@ -5,7 +5,7 @@
 
 
 :root {
-    --dark-green:#61892F;
+    --dark-green: #709d37;
     --light-green:#86C232;
     --dark-grey:#222629;
     --medium-grey:#474B4F;
@@ -51,6 +51,25 @@ nav a{
     font-weight: lighter;
 }
 
+.navbar-nav .nav-link{
+    color: var(--dark-green)
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--light-green)
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--light-green)
+}
+
+svg{
+    fill: var(--dark-green);
+}
+
+svg:hover{
+    fill: var(--light-green);
+}
 
 .bgr{
     background-color: var(--white);
