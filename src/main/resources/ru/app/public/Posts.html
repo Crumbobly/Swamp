@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swamp</title>
+    <title>Посты</title>
 
     <link rel="icon" type="image/png" href="images/favicon/frog-favicon.svg" sizes="32x32"/>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Main.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/Posts.css" rel="stylesheet">
 
 </head>
 
@@ -16,55 +17,51 @@
 
 <header class="header">
 
-    <div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <div class="container-fluid mx-5 p-0">
+        <div class="container-fluid mx-5 p-0 ">
 
-                <a class="navbar-brand" href="#">
-                    <img src="images/favicon/frog-favicon.svg" alt="frog" width="30" height="24" class="d-inline-block align-text-bottom">
-                    Swamp
-                </a>
+            <a class="navbar-brand" href="#">
+                <img src="images/favicon/frog-favicon.svg" alt="frog" width="30" height="24" class="d-inline-block align-text-bottom">
+                Swamp
+            </a>
 
-                <div class="navbar-nav navbar_nav_center">
-                    <a class="nav-link p-0" href="./Main.html">
-                        Главная
-                    </a>
-                    <a class="nav-link p-0 mx-3 active">
-                        Посты
-                    </a>
-                    <a class="nav-link p-0" href="#">
-                        Чаты
-                    </a>
-                </div>
-
-                <!-- Правая часть navbar -->
-
-                <div class="d-flex align-items-center ">
-                    <a class="nav-link p-0 mx-1" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                    </a>
-                    <a class="nav-link p-0 mx-1" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                        </svg>
-                    </a>
-                    <a class="nav-link p-0 ms-1" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="navbar_nav_center">
+                <ul class="navbar-nav  general_navbar">
+                    <li class="nav-item">
+                        <a class="nav-link green" href="./Main.html">Главная</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link green on_curr_page" >Посты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link green">Чаты</a>
+                    </li>
+                </ul>
             </div>
 
-        </nav>
 
+            <div class=" align-items-center ">
+
+                <a class="nav-link p-0 ms-1" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="justify-content-around w-100 additional_navbar pb-1" hidden="hidden">
+        <a class="green " href="./Main.html">Главная</a>
+        <a class="green on_curr_page mx-3">Посты</a>
+        <a class="green">Чаты</a>
     </div>
+
+
 
 </header>
 
@@ -126,7 +123,7 @@
         </div>
 
 
-        <div class="col-10 mb-3 p-0 ps-3">
+        <div class="col-10 p-0 ps-3">
 
             <div class="background_rounded h-100">
 

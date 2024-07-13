@@ -1,0 +1,108 @@
+@font-face { font-family: "text_font1"; src: url("../fonts/text_font1.ttf"); }
+@font-face { font-family: "LXGW"; src: url("../fonts/LXGW.ttf"); }
+@font-face { font-family: "Underdog"; src: url("../fonts/Underdog.ttf"); }
+
+
+:root {
+    --dark-green: #709d37;
+    --light-green:#86C232;
+    --dark-grey:#222629;
+    --medium-grey:#474B4F;
+    --light-grey:#6B6E70;
+    --white-grey: #e5e5e5;
+    --white: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--white-grey);
+}
+
+.h-35{
+    height: 35%;
+}
+
+.h-65{
+    height: 65%;
+}
+
+.white_img{
+    fill: var(--white)
+}
+
+p, h1, h2, h3, h4, h5, label{
+    color: var(--dark-grey);
+}
+
+.navbar_nav_center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.general_navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.additional_navbar{
+    background-color: var(--dark-grey);
+    display: flex;
+}
+
+nav a, a{
+    font-family: Underdog, sans-serif;
+    font-weight: lighter;
+}
+
+a.green{
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+a.green:hover{
+    color: var(--light-green)
+}
+
+a.on_curr_page{
+    color: var(--light-green)
+}
+
+svg{
+    fill: var(--dark-green);
+}
+
+svg:hover{
+    fill: var(--light-green);
+}
+
+.background_rounded{
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+.text p{
+    font-size: 0.9rem;
+    font-weight:bolder;
+    display:inline;
+}
+
+.text{
+    padding-left: 0.14rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--dark-grey);
+}
+
+@media only screen and (max-width: 575px) {
+    .general_navbar{
+        display: none;
+        visibility: hidden;
+    }
+    .additional_navbar{
+        display: flex !important;;
+        visibility: visible;
+    }
+}
