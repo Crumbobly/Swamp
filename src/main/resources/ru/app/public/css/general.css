@@ -102,7 +102,7 @@ svg:hover{
         visibility: hidden;
     }
     .additional_navbar{
-        display: flex !important;;
+        display: flex !important;
         visibility: visible;
     }
 }
