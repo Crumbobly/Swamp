@@ -10,8 +10,9 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/Main.css" rel="stylesheet">
 
-<body class="d-flex flex-column">
+</head>
 
+<body class="d-flex flex-column">
 
 <header class="header">
 
@@ -26,11 +27,14 @@
                     Swamp
                 </a>
 
-                <div class="navbar-nav navbar-nav-center">
-                    <a class="nav-link p-0 me-3 active" href="#">
+                <div class="navbar-nav navbar_nav_center">
+                    <a class="nav-link p-0 active">
                         Главная
                     </a>
-                    <a class="nav-link p-0 ms-3" href="#">
+                    <a class="nav-link p-0 mx-3" href="./Posts.html">
+                        Посты
+                    </a>
+                    <a class="nav-link p-0" href="#">
                         Чаты
                     </a>
                 </div>
@@ -38,17 +42,7 @@
                 <!-- Правая часть navbar -->
 
                 <div class="d-flex align-items-center ">
-                    <a class="nav-link p-0 mx-1" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                    </a>
-                    <a class="nav-link p-0 mx-1" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                        </svg>
-                    </a>
+
                     <a class="nav-link p-0 ms-1" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
@@ -66,53 +60,47 @@
 
 
 <main class="container-fluid flex-fill">
-    <div class="row h-100 px-5 py-3">
 
-        <div class="col-2 bgr">
-            <div class="py-2">
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
+
+        <div class="row h-100 px-5 py-3">
+
+            <div class="col-2 p-0 ">
+                <div class="background_rounded h-100">
+
+                    <div class="mx-3">
+
+                        <div class="text">
+                            <p class="mb-4">Статистика</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="col-10 mb-3 p-0 ps-3">
+
+                <div class="background_rounded h-65 mb-3 img_container" id="scroll1">
+                    <img src="images/svg/swamp-01.svg" alt="Болото фон" class="">
+                </div>
+
+                <div class="background_rounded h-35" id="scroll2">
+                    <div class="last_activity_div rounded-top-4 py-2 ps-4">
+                        <h6 class="m-0">
+                            Информация о сайте
+                        </h6>
+                    </div>
+                    <p class="ps-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione recusandae soluta tenetur.
+                    </p>
+                </div>
+
             </div>
 
         </div>
-
-
-        <div class="col-8 px-3 pb-3">
-
-            <div class="bgr h-60 mb-3">
-
-            </div>
-
-            <div class="bgr h-40">
-
-            </div>
-
-        </div>
-
-        <div class="col-2 bgr">
-
-            <div class="py-2">
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-                <p>123</p>
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
 </main>
 
 
