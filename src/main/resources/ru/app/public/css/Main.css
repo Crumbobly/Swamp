@@ -42,11 +42,27 @@ main{
 
 }
 
-@media only screen and (max-width: 991px) {
-    #div1 {
-        order: 2; /* Ставим div с id="1" ниже */
-    }
-    #div2 {
-        order: 1; /* Ставим div с id="2" выше */
-    }
-}
+/* @media only screen and (max-width: 991px) { */
+/*     #div1 { */
+/*         order: 2;  *//* Ставим div с id="1" ниже */
+/*     } */
+/*     #div2 { */
+/*         order: 1;  *//* Ставим div с id="2" выше */
+/*     } */
+/* } */
+
+ @media (max-width: 991px) {
+            #div1 {
+                margin-bottom: 1rem;
+            }
+            .main_content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+/*  вот эата хуйня работает, но статистика будет вверху*/
+
+
+
+
+
