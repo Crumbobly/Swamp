@@ -31,6 +31,16 @@ main{
     flex-flow: column;
     height: 100%;
 }
+.button button{
+    border:none;
+    background-color:var(--dark-green);
+    border-radius:5%;
+
+}
+.button{
+    padding-top:0.4rem;
+
+}
 
 @media only screen and (max-width: 991px) {
     #div1 {
