@@ -23,7 +23,7 @@
 
         <div class="container-fluid mx-5 p-0 ">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand">
                 <img src="images/favicon/frog-favicon.svg" alt="frog" width="30" height="24" class="d-inline-block align-text-bottom">
                 Swamp
             </a>
@@ -33,7 +33,7 @@
                     <li class="nav-item">
                         <a class="nav-link green on_curr_page" >Главная</a>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-3 mx-lg-2">
                         <a class="nav-link green" href="./Posts.html">Посты</a>
                     </li>
                     <li class="nav-item">
@@ -42,10 +42,9 @@
                 </ul>
             </div>
 
+            <div class=" align-items-center">
 
-            <div class=" align-items-center ">
-
-                <a class="nav-link p-0 ms-1" href="#">
+                <a class="nav-link p-0 ms-1 " href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -67,43 +66,40 @@
 </header>
 
 
-<main class="container-fluid flex-fill">
+<main class="container-fluid">
 
-        <div class="row h-100 px-5 py-3 main_content">
+    <div class="row px-5 py-3 main_content">
 
-            <div class="col-2 p-0 background_rounded">
+        <div class="col-12 col-xl-2 col-lg-3 p-0 background_rounded mt-3 mt-lg-0" id="div1">
 
-                <div class="mx-3">
-
-                    <div class="text">
-                        <p class="mb-4">Статистика</p>
-                    </div>
-
+            <div class="mx-3">
+                <div class="text">
+                    <p class="mb-4">Статистика</p>
                 </div>
-
-            </div>
-
-
-            <div class="col-10 mb-3 p-0 ps-3" >
-
-                <div class="background_rounded h-65 mb-3 img_container">
-                    <img src="images/svg/swamp-01.svg" alt="Болото фон" class="">
-                </div>
-
-                <div class="background_rounded h-35 ">
-                    <div class="site_info_div rounded-top-4 py-2 ps-4">
-                        <h6 class="m-0">
-                            Информация о сайте
-                        </h6>
-                    </div>
-                    <p class="ps-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione recusandae soluta tenetur.
-                    </p>
-                </div>
-
             </div>
 
         </div>
+
+        <div class="col-12 col-xl-10 col-lg-9 mb-3 p-0 ps-lg-3" id="div2">
+
+            <div class="background_rounded h-65 mb-3 img_container">
+                <img src="images/svg/swamp-01.svg" alt="Болото фон" class="">
+            </div>
+            <div class="background_rounded text_container">
+                <div class="site_info_div rounded-top-4 py-2 ps-4">
+                    <h6 class="m-0">Информация о сайте</h6>
+                </div>
+                <p class="ps-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur dolorem,
+                    doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                    recusandae soluta tenetur.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
 </main>
 
 
