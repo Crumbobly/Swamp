@@ -1,0 +1,32 @@
+.tooltip-text {
+    position: absolute;
+    top: -40px;
+    z-index: 2;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+#fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.my-tooltip:hover #fade {
+    opacity: 1;
+}
+
+
+.my-tooltip {
+    flex-grow: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.tooltip-wrapper{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

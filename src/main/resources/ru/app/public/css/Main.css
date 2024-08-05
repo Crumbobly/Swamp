@@ -19,6 +19,37 @@
     min-height: 35%;
 }
 
+.statistic_item{
+    height: 1.5rem;
+    background-color: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statistic_item img {
+    margin-left: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.statistic_item p {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding-left: 0.5rem;
+    display: inline;
+}
+
+
+.statistic_item .counter {
+    margin: 0 0.5rem 0 auto;
+    white-space: nowrap;
+}
+
+.statistic_item p:not(.counter){
+    padding-right: 1rem;
+}
+
 .main_content{
     flex-grow: 1;
     flex-shrink: 1;
@@ -31,38 +62,14 @@ main{
     flex-flow: column;
     height: 100%;
 }
-.button button{
-    border:none;
-    background-color:var(--dark-green);
-    border-radius:5%;
 
+
+@media only screen and (max-width: 991px) {
+    #div1 {
+        order: 2; /* Ставим div с id="1" ниже */
+    }
+    #div2 {
+        order: 1; /* Ставим div с id="2" выше */
+    }
 }
-.button{
-    padding-top:0.4rem;
-
-}
-
-/* @media only screen and (max-width: 991px) { */
-/*     #div1 { */
-/*         order: 2;  *//* Ставим div с id="1" ниже */
-/*     } */
-/*     #div2 { */
-/*         order: 1;  *//* Ставим div с id="2" выше */
-/*     } */
-/* } */
-
- @media (max-width: 991px) {
-            #div1 {
-                margin-bottom: 1rem;
-            }
-            .main_content {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-/*  вот эата хуйня работает, но статистика будет вверху*/
-
-
-
-
 

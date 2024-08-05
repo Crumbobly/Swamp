@@ -95,7 +95,7 @@ svg:hover{
 .text{
     padding-left: 0.14rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .7rem;
     border-bottom: 2px solid var(--dark-grey);
 }
 

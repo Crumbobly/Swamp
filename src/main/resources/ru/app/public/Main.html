@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/Main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/Tooltip.css" rel="stylesheet">
 
 </head>
 
@@ -71,81 +71,110 @@
 
     <div class="row px-5 py-3 main_content">
 
-        <div class="col-12 col-xl-2 col-lg-3 p-0 background_rounded mt-3 mt-lg-0" id="div1">
+        <div class="col-12 col-xl-2 col-lg-3 p-0 background_rounded mt-3 mt-lg-0">
 
             <div class="mx-3">
                 <div class="text">
-                    <p class="mb-4">Статистика</p>
+                    <p>Статистика</p>
                 </div>
-                
-                <div class="buttons py-3">
 
+                <div class="statistic_item mt-3 rounded-1">
+                    <img src="images/icons/pencil-fill.svg" alt="posts"/>
 
-                    <div class="button">
-                        <button class="  w-100 ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                               <p class="input-text  p-0 m-0">Posts</p>
-                               <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
+                    <p class="m-0">
+                        Посты
+                    </p>
+
+                    <div class="my-tooltip">
+                        <div class="tooltip-wrapper">
+                            <p class="counter">
+                                00000000000000000000000000000
+                            </p>
+                        </div>
+                        <span class="tooltip-text" id="fade">I'm a tooltip!</span>
                     </div>
-
-                    <div class="button">
-                        <button class="  w-100 ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                                <p class="input-text  p-0 m-0">Posts</p>
-                                <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="button">
-                        <button class="  w-100 ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                                <p class="input-text  p-0 m-0">Posts</p>
-                                <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="button">
-                        <button class="  w-100 ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                                <p class="input-text  p-0 m-0">Posts</p>
-                                <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="button">
-                        <button class="  w-100 ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                                <p class="input-text  p-0 m-0">Posts</p>
-                                <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="button">
-                        <button class="  w-100  ">
-                            <div class="d-flex justify-content-between align-items-center ">
-                                <p class="input-text  p-0 m-0">Posts</p>
-                                <p class="number p-0 m-0">6</p>
-                            </div>
-                        </button>
-                    </div>
-
-
                 </div>
+
+                <div class="statistic_item mt-2 rounded-1">
+                    <img src="images/icons/chat-square-text-fill.svg" alt="comments"/>
+
+                    <p class="m-0">
+                        Комментарии
+                    </p>
+
+                    <div class="my-tooltip">
+                        <div class="tooltip-wrapper">
+                            <p class="counter">
+                                00000000000000000000000000000
+                            </p>
+                        </div>
+                        <span class="tooltip-text" id="fade">I'm a tooltip!</span>
+                    </div>
+                </div>
+
+                <div class="statistic_item mt-2 rounded-1">
+                    <img src="images/icons/hand-thumbs-up-fill.svg" alt="grades"/>
+
+                    <p class="m-0">
+                        Оценки
+                    </p>
+
+                    <div class="my-tooltip">
+                        <div class="tooltip-wrapper">
+                            <p class="counter">
+                                00000000000000000000000000000
+                            </p>
+                        </div>
+                        <span class="tooltip-text" id="fade">I'm a tooltip!</span>
+                    </div>
+                </div>
+
+                <div class="statistic_item mt-2 rounded-1">
+                    <img src="images/icons/person-fill.svg" alt="users"/>
+
+                    <p class="m-0">
+                        Пользователи
+                    </p>
+
+                    <div class="my-tooltip">
+                        <div class="tooltip-wrapper">
+                            <p class="counter">
+                                1234567890987654321
+                            </p>
+                        </div>
+                        <span class="tooltip-text" id="fade">I'm a tooltip!</span>
+                    </div>
+                </div>
+
+
+                <div class="statistic_item mt-2 rounded-1">
+                    <img src="images/icons/chat-fill.svg" alt="messages"/>
+
+                    <p class="m-0">
+                        Сообщения
+                    </p>
+
+                    <div class="my-tooltip">
+                        <div class="tooltip-wrapper">
+                            <p class="counter">
+                                0
+                            </p>
+                        </div>
+                        <span class="tooltip-text" id="fade">I'm a tooltip!</span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="col-12 col-xl-10 col-lg-9 mb-3 p-0 ps-lg-3" id="div2">
+
+        <div class="col-12 col-xl-10 col-lg-9 mb-3 p-0 ps-lg-3">
 
             <div class="background_rounded h-65 mb-3 img_container">
-                <img src="images/svg/swamp-01.svg" alt="Болото фон" class="">
+                <img src="images/svg/swamp-01.svg" alt="Болото фон">
             </div>
+
             <div class="background_rounded text_container">
                 <div class="site_info_div rounded-top-4 py-2 ps-4">
                     <h6 class="m-0">Информация о сайте</h6>
@@ -163,6 +192,7 @@
 
 </main>
 
+<script src="js/Main.js"></script>
 
 </body>
 </html>
