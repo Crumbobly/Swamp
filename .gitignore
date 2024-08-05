@@ -1,4 +1,6 @@
 .kotlin
+.gradle
+.idea
 *.zip
 build
 tmp
