@@ -1,32 +1,33 @@
-.tooltip-text {
-    position: absolute;
-    top: -40px;
-    z-index: 2;
-    color: white;
-    font-size: 12px;
-    background-color: #192733;
-    border-radius: 10px;
-    padding: 10px 15px 10px 15px;
-}
-
-#fade {
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-
-.my-tooltip:hover #fade {
-    opacity: 1;
-}
-
-
-.my-tooltip {
-    flex-grow: 1;
-    min-width: 0;
+[data-tooltip] {
     position: relative;
+    overflow: hidden;
 }
 
-.tooltip-wrapper{
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    align-content: center;
+    height: 100%;
+    left: 100%; /* Начальное положение за пределами справа */
+    border-radius: 0.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background: var(--dark-green);
+    color: var(--dark-grey);
+    pointer-events: none;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateX(-100%); /* Сдвиг влево на ширину элемента */
+}
+
+.tooltip-trigger{
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }

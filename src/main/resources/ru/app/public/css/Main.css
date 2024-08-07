@@ -24,7 +24,7 @@
     background-color: var(--light-green);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
 .statistic_item img {
@@ -60,6 +60,17 @@
 main{
     display: flex;
     flex-flow: column;
+    height: 100%;
+}
+
+.scrollable-content {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.scrollable-wrapper{
+    position: relative;
+    overflow: hidden;
     height: 100%;
 }
 

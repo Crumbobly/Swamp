@@ -17,9 +17,12 @@ html, body{
     height: 100%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
+}
+
+main{
     background-color: var(--white-grey);
 }
 
@@ -37,6 +40,10 @@ body{
 
 p, h1, h2, h3, h4, h5, label{
     color: var(--dark-grey);
+}
+
+nav{
+    background-color: var(--dark-grey);
 }
 
 .navbar_nav_center {
@@ -82,8 +89,11 @@ svg:hover{
 }
 
 .background_rounded{
-    background-color: var(--white);
     border-radius: 15px;
+}
+
+.bg-white{
+    background-color: var(--white);
 }
 
 .text p{
