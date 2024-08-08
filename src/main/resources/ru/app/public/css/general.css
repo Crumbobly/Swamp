@@ -15,16 +15,21 @@
 
 *{
     box-sizing: border-box;
+
 }
 
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
+    border:3px solid yellow;
+
 }
 
 main{
     background-color: var(--white-grey);
+/*     height:100%; */
+    border:2px solid #000;
 }
 
 
