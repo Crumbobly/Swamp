@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 outerDiv.appendChild(innerDiv);
             }
         }
+        else{
+            // TODO("Сделать обратное")
+        }
     }
 
     checkResolution();

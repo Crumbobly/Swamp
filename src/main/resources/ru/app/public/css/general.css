@@ -13,26 +13,20 @@
     --white: #FFFFFF;
 }
 
-html, body{
-    height: 100%;
+*{
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 main{
     background-color: var(--white-grey);
 }
 
-.h-35{
-    height: 35%;
-}
-
-.h-65{
-    height: 65%;
-}
 
 .white_img{
     fill: var(--white)
