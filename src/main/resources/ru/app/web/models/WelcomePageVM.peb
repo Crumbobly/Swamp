@@ -2,146 +2,243 @@
 
 {# @pebvariable name="model" type="ru.app.web.models.WelcomePageVM" #}
 
-
-
-
-<!doctype html>
-<html lang="ru-RU">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Swamp</title>
-    <link rel="icon" type="image/png" href="/images/favicon/frog-favicon.svg" sizes="32x32" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/favicon/frog-favicon.svg" sizes="32x32"/>
 
-    <link href="/css/general.css" rel="stylesheet">
-    <link href="/css/WelcomePage.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    <link href="css/Tooltip.css" rel="stylesheet">
+    <link href="css/Scrollbar.css" rel="stylesheet">
+
 </head>
 
 <body>
 
+<header class="header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid mx-5 p-0 ">
+
+            <a class="navbar-brand">
+                <img src="images/favicon/frog-favicon.svg" alt="frog" width="30" height="24"
+                     class="d-inline-block align-text-bottom">
+                Swamp
+            </a>
+
+            <div class="navbar_nav_center">
+                <ul class="navbar-nav general_navbar">
+                    <li class="nav-item">
+                        <a class="nav-link green on_curr_page">Главная</a>
+                    </li>
+                    <li class="nav-item mx-3 mx-lg-2">
+                        <a class="nav-link green" href="./Posts.html">Посты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link green">Чаты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" align-items-center">
+
+                <a class="nav-link p-0 ms-1 " href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                         class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd"
+                              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="justify-content-around w-100 additional_navbar py-1" hidden="hidden">
+        <a class="green on_curr_page">Главная</a>
+        <a class="green mx-3" href="./Posts.html">Посты</a>
+        <a class="green">Чаты</a>
+    </div>
+
+
+</header>
+
 
 <main>
 
-    <div class="container-fluid d-flex align-items-center">
+    <div class="row px-4 px-md-5 py-3 d-flex overflow-hidden flex-column">
 
-        <div class="left_slide" id="left_slide"></div>
+        <div class="col col-auto col-xl-2 col-lg-3 p-0 background_rounded bg-white mt-0">
 
-        <div class="container-fluid text-center align-self-start mt-5 mb-md-5 mx-lg-5 mx-md-3 mx-sm-1">
-
-            <div class="px-3">
-                <h1 class="mb-5">Добро пожаловать в Болото!</h1>
-                <h2>
-                    Этот проект выполнен для получения новых навыков в программировании и пр. и не преследует никаких коммерческих целей.
-                    Swamp - это небольшая социальная сеть. Здесь вы сможете общаться с другими людьми и много другое.
-                </h2>
-
-            </div>
-
-            <div class="container my-5" id="confirmationDiv" hidden="hidden">
-                <h3>Почти всё</h3>
-                <p>Спасибо за регистрацию! Пожалуйста, проверьте свою электронную почту для подтверждения аккаунта.</p>
-            </div>
-
-
-            <div class="container my-5" id="formDiv">
-
-                <div class="row">
-                    <div class="col-10 col-md-8 col-lg-6 offset-1 offset-md-2 offset-lg-3" id="login-reg-form">
-
-                        <ul class="nav nav-pills justify-content-start" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active rounded-0 rounded-top" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="home" aria-selected="true">Вход</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link rounded-0 rounded-top" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="profile" aria-selected="false">Регистрация</button>
-                            </li>
-                        </ul>
-
-                        <div class="strip"></div>
-
-                        <div class="tab-content mt-4" id="tabContent">
-                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                                <form method="post" action="/login">
-
-                                    <div class="mb-2">
-                                        <label for="inputLoginPassEmail_login" class="form-label text-start d-flex">Почта / логин / номер телефона</label>
-                                        <input type="text"  class="form-control" id="inputLoginPassEmail_login" aria-describedby="emailHelp" required>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="inputPassword_login" class="form-label text-start d-flex">Пароль</label>
-                                        <input type="password" class="form-control" id="inputPassword_login" required>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="rememberMeCheckbox_login">
-                                        <label class="form-check-label text-start d-flex" for="rememberMeCheckbox_login">Запомнить меня</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Вход</button>
-
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                                <form method="post" action="/register">
-                                    <div class="mb-0">
-                                        <label for="inputLogin_register" class="form-label  d-flex">Логин</label>
-                                        <input type="text" class="form-control" id="inputLogin_register" required>
-                                        <p id="loginHelp" class="text-start mb-2" >Логин необходим для того, чтобы другие люди могли отличить вас. В дальнейшем его нельзя будет изменить.</p>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="inputEmail_register" class="form-label text-start d-flex">Почта</label>
-                                        <input type="email" class="form-control" id="inputEmail_register" required>
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="inputPassword_register" class="form-label text-start d-flex">Пароль</label>
-                                        <input type="password" class="form-control" id="inputPassword_register" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="inputPasswordRepeat_register" class="form-label text-start d-flex">Повторите пароль</label>
-                                        <input type="password" class="form-control" id="inputPasswordRepeat_register" required>
-                                    </div>
-                                    <div class="g-recaptcha" data-sitekey="0000000000000000000000"></div>
-
-                                    <button type="submit"
-                                            id="submit_button"
-                                            class="g-recaptcha btn btn-primary"
-                                            data-sitekey="key"
-                                            data-callback='onSubmit'
-                                            data-action='submit'>
-                                        Регистрация
-                                    </button>
-
-
-                                </form>
-                            </div>
-
-                        </div>
-
-                    </div>
+            <div class="px-3 pb-3 background_rounded bg-white" id="div1">
+                <div class="text">
+                    <p>Статистика</p>
                 </div>
+
+                <div class="statistic_item mt-3 rounded-1" data-tooltip="73453">
+                    <img src="images/icons/pencil-fill.svg" alt="posts"/>
+
+                    <p class="m-0">
+                        Посты
+                    </p>
+
+                    <div class="ms-auto tooltip-trigger">
+                        <p class="counter">
+                            73453
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="statistic_item mt-2 rounded-1" data-tooltip="987654321012">
+                    <img src="images/icons/chat-square-text-fill.svg" alt="comments"/>
+
+                    <p class="m-0">
+                        Комментарии
+                    </p>
+
+                    <div class="ms-auto tooltip-trigger">
+                        <p class="counter">
+                            987654321012
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="statistic_item mt-2 rounded-1" data-tooltip="12673800">
+                    <img src="images/icons/hand-thumbs-up-fill.svg" alt="grades"/>
+
+                    <p class="m-0">
+                        Оценки
+                    </p>
+
+                    <div class="ms-auto tooltip-trigger">
+                        <p class="counter">
+                            12673800
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="statistic_item mt-2 rounded-1" data-tooltip="123">
+                    <img src="images/icons/person-fill.svg" alt="users"/>
+
+                    <p class="m-0">
+                        Пользователи
+                    </p>
+
+                    <div class="ms-auto tooltip-trigger">
+                        <p class="counter">
+                            123
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="statistic_item mt-2 rounded-1" data-tooltip="0">
+                    <img src="images/icons/chat-fill.svg" alt="messages"/>
+
+                    <p class="m-0">
+                        Сообщения
+                    </p>
+
+                    <div class="ms-auto tooltip-trigger">
+                        <p class="counter">
+                            0
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
+        <div class="col col-12 col-xl-10 col-lg-9 p-0 ps-lg-3 d-flex overflow-hidden">
 
+            <div class="scrollable pe-3">
+
+                <div class="background_rounded mb-3 img_container" style="height: 350px;">
+                    <img src="images/svg/swamp-01.svg" alt="Болото фон">
+                </div>
+
+                <div class="background_rounded bg-white text_container mb-3">
+
+                    <div class="site_info_div rounded-top-4 py-2 ps-4">
+                        <h6 class="m-0">Новости</h6>
+                    </div>
+
+                    <p class="ps-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                        dolorem,
+                        doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                        recusandae soluta tenetur.
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                        dolorem,
+                        doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                        recusandae soluta tenetur.
+
+                    </p>
+
+                </div>
+
+                <div class="background_rounded bg-white text_container mb-3 mb-lg-0">
+
+                    <div class="site_info_div rounded-top-4 py-2 ps-4">
+                        <h6 class="m-0">Информация о сайте</h6>
+                    </div>
+
+                    <p class="ps-4 mb-0" style="height: 1000px;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                        dolorem,
+                        doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                        recusandae soluta tenetur.
+
+                    </p>
+
+                </div>
+
+                <div id="div2">
+
+                </div>
+
+
+            </div>
+
+        </div>
 
     </div>
 
 </main>
 
-<footer>
-</footer>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
-<script src="/js/WelcomePage.js"></script>
+<script src="js/Main.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

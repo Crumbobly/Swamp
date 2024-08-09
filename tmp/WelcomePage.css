@@ -1,125 +1,33 @@
-
-html{
-    scrollbar-width: none;
-}
-
-
-body::after {
-    background-image: url('../src/main/resources/ru/app/public/images/svg/38142.svg');
-    background-position: bottom left;
-    height: 30vh;
-    opacity: 0.2;
-    left: 5%;
-}
-
-body::before {
-    background-image: url('../src/main/resources/ru/app/public/images/svg/38015.svg');
-    background-position: bottom right;
-    right: 1%;
-}
-
-
-.left_slide{
-    position: fixed;
-    top: 0;
-    left: 4%;
+html, body {
     height: 100vh;
-    width: 2px;
-
-    background-image: linear-gradient(to bottom, var(--light-green) 50%, var(--light-grey) 50%);
+    margin: 0;
+    overflow: hidden;
 }
 
-.left_slide::before, .left_slide::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px; /* диаметр точки */
-    height: 8px; /* диаметр точки */
-    background-color: var(--dark-green); /* цвет точки */
-    border-radius: 50%; /* чтобы точка была круглой */
-    z-index: 1;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-.left_slide::before {
-    top: 25%; /* позиционируем первую точку на четверть высоты */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.left_slide::after {
-    top: 50%; /* позиционируем вторую точку на три четверти высоты */
+.del {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
-#login-reg-form{
-    font-size: 1.2vmax;
+.col {
+    flex: 1 1 auto;
 }
 
-#login-reg-form .nav-link{
-    background-color: var(--dark-grey);
-    color: var(--white-grey);
-    font-size: 1.2vmax;
-}
-
-#login-reg-form .nav-link:hover{
-    background-color: var(--light-grey);
-}
-
-
-#login-reg-form .nav-link.active{
-    color: var(--white);
-}
-
-#login-reg-form input.form-control{
-    background-color: var(--white);
-}
-
-#login-reg-form input.form-control:focus, .form-check-input:focus{
-    outline: 0 none;
-    border-color: var(--dark-green);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-}
-
-#login-reg-form .form-check-input{
-    background-color: var(--white);
-    border-color: var(--dark-grey);
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
-}
-
-
-#login-reg-form .form-check-input:checked{
-    background-color: var(--light-green);
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb(255,255,255)'/></svg>");
-
-}
-
-#login-reg-form .strip {
-    background-color: var(--dark-green);
-    height: 2px;
-    width: 100%;
-}
-
-#login-reg-form button {
-    background-color: var(--dark-green);
-    border-color: var(--dark-grey);
-    font-size: 1.2vmax;
-}
-
-#login-reg-form button:hover {
-    background-color: var(--light-green);
-    border-color: var(--dark-grey);
-}
-
-#login-reg-form button:active {
-    outline: 0 none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-}
-
-
-@media screen and (max-width: 991px) {
-
-    #login-reg-form, #login-reg-form .nav-link{
-        font-size: 1.6vmax;
-    }
-
+.scrollable {
+    flex-grow: 1;
+    overflow-y: auto;
 }

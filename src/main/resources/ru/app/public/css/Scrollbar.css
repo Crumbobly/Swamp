@@ -13,3 +13,5 @@
     border: 1px solid var(--light-grey);
     border-radius: 15px;
 }
+
+/*TODO("Не работает в Safari (Iphone), проверить на Android")*/

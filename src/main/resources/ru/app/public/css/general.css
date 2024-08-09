@@ -13,25 +13,24 @@
     --white: #FFFFFF;
 }
 
-*{
-    box-sizing: border-box;
-
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    border:3px solid yellow;
-
+    display: flex;
+    flex-direction: column;
 }
 
-main{
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     background-color: var(--white-grey);
-/*     height:100%; */
-    border:2px solid #000;
 }
-
 
 .white_img{
     fill: var(--white)
