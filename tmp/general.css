@@ -1,6 +1,6 @@
-@font-face { font-family: "text_font1"; src: url("../src/main/resources/ru/app/public/fonts/text_font1.ttf"); }
-@font-face { font-family: "LXGW"; src: url("../src/main/resources/ru/app/public/fonts/LXGW.ttf"); }
-@font-face { font-family: "Underdog"; src: url("../src/main/resources/ru/app/public/fonts/Underdog.ttf"); }
+@font-face { font-family: "text_font1"; src: url("../backend/src/main/resources/ru/app/public/fonts/text_font1.ttf"); }
+@font-face { font-family: "LXGW"; src: url("../backend/src/main/resources/ru/app/public/fonts/LXGW.ttf"); }
+@font-face { font-family: "Underdog"; src: url("../backend/src/main/resources/ru/app/public/fonts/Underdog.ttf"); }
 
 :root {
     --dark-green:#61892F;

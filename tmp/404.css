@@ -5,7 +5,7 @@ body{
 
 
 body::after {
-    background-image: url('../src/main/resources/ru/app/public/images/svg/1299701.svg');
+    background-image: url('../backend/src/main/resources/ru/app/public/images/svg/1299701.svg');
 
     left: 2%;
     top: 18%;
