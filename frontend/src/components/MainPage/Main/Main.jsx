@@ -1,18 +1,23 @@
 import React, {useEffect} from "react";
-import MainPageScript from '../../../assets/js/MainPageScript'
+
 import './Main.css'
+import '../../../assets/css/Scrollbar.css'
+import '../../../assets/css/Tooltip.css'
 
-function Main(){
+import chat_1 from '../../../assets/images/icons/chat-fill.svg'
+import chat_2 from '../../../assets/images/icons/chat-square-text-fill.svg'
+import like from '../../../assets/images/icons/like.svg'
+import pencil from '../../../assets/images/icons/pencil-fill.svg'
+import person from '../../../assets/images/icons/person-fill.svg'
 
-    // Загрузка скрипта
-    useEffect(() => {
-        MainPageScript();
-    }, []);
+
+function Main() {
+
 
     return (
-        <main>
 
-            <div className="row px-4 px-md-5 py-3 d-flex overflow-hidden flex-column">
+        <main>
+            <div className="row mx-4 mx-md-4 py-3 d-flex overflow-hidden flex-column">
 
                 <div className="col col-auto col-xl-2 col-lg-3 p-0 background_rounded bg-white mt-0">
 
@@ -22,7 +27,7 @@ function Main(){
                         </div>
 
                         <div className="statistic_item mt-3 rounded-1" data-tooltip="73453">
-                            <img src="images/icons/pencil-fill.svg" alt="posts"/>
+                            <img src={pencil} alt="posts"/>
 
                             <p className="m-0">
                                 Посты
@@ -37,7 +42,7 @@ function Main(){
                         </div>
 
                         <div className="statistic_item mt-2 rounded-1" data-tooltip="987654321012">
-                            <img src="images/icons/chat-square-text-fill.svg" alt="comments"/>
+                            <img src={chat_2} alt="comments"/>
 
                             <p className="m-0">
                                 Комментарии
@@ -52,7 +57,7 @@ function Main(){
                         </div>
 
                         <div className="statistic_item mt-2 rounded-1" data-tooltip="12673800">
-                            <img src="images/icons/hand-thumbs-up-fill.svg" alt="grades"/>
+                            <img src={like} alt="grades"/>
 
                             <p className="m-0">
                                 Оценки
@@ -67,7 +72,7 @@ function Main(){
                         </div>
 
                         <div className="statistic_item mt-2 rounded-1" data-tooltip="123">
-                            <img src="images/icons/person-fill.svg" alt="users"/>
+                            <img src={person} alt="users"/>
 
                             <p className="m-0">
                                 Пользователи
@@ -83,7 +88,7 @@ function Main(){
 
 
                         <div className="statistic_item mt-2 rounded-1" data-tooltip="0">
-                            <img src="images/icons/chat-fill.svg" alt="messages"/>
+                            <img src={chat_1} alt="messages"/>
 
                             <p className="m-0">
                                 Сообщения
@@ -106,7 +111,7 @@ function Main(){
                     <div className="scrollable pe-3">
 
                         <div className="background_rounded mb-3 img_container" style={{height: 350 + 'px'}}>
-                            <img src="images/svg/swamp-01.svg" alt="Болото фон"/>
+                            <img src="images/swamp.svg" alt="Болото фон"/>
                         </div>
 
                         <div className="background_rounded bg-white text_container mb-3">
@@ -116,14 +121,18 @@ function Main(){
                             </div>
 
                             <p className="ps-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
+                                consequuntur
                                 dolorem,
-                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
+                                ratione
                                 recusandae soluta tenetur.
 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
+                                consequuntur
                                 dolorem,
-                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
+                                ratione
                                 recusandae soluta tenetur.
 
                             </p>
@@ -137,9 +146,11 @@ function Main(){
                             </div>
 
                             <p className="ps-4 mb-0" style={{height: 1000 + 'px'}}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at consequuntur
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
+                                consequuntur
                                 dolorem,
-                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui ratione
+                                doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
+                                ratione
                                 recusandae soluta tenetur.
 
                             </p>
@@ -149,7 +160,7 @@ function Main(){
                         <div id="div2">
 
                         </div>
-                        // TODO("Какой-то прикол с нижним отступом на телефоне (Safari)")
+                        {/* TODO("Какой-то прикол с нижним отступом на телефоне (Safari)")*/}
 
                     </div>
 
@@ -158,6 +169,7 @@ function Main(){
             </div>
 
         </main>
+
     )
 }
 

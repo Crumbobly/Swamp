@@ -1,6 +1,8 @@
-import React, {useState, useEffect, Component} from 'react';
+import React from 'react';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.css';
+
 import Header from '../Header/Header'
 import Main from '../MainPage/Main/Main'
 

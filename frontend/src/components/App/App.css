@@ -13,16 +13,18 @@
     --white: #FFFFFF;
 }
 
-html, body {
+html, body, #root {
     height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
-body {
+body, #root {
     display: flex;
     flex-direction: column;
 }
+
+
 
 main {
     flex-grow: 1;
