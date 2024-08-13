@@ -11,6 +11,8 @@ import pencil from '../../../assets/images/icons/pencil-fill.svg'
 import person from '../../../assets/images/icons/person-fill.svg'
 
 
+import '../../../assets/js/MainPageScript'
+
 function Main() {
 
 
@@ -19,7 +21,7 @@ function Main() {
         <main>
             <div className="row mx-4 mx-md-4 py-3 d-flex overflow-hidden flex-column">
 
-                <div className="col col-auto col-xl-2 col-lg-3 p-0 background_rounded bg-white mt-0">
+                <div className="col col-auto col-xl-2 col-lg-3 p-0 background_rounded bg-white mt-0" id="div3">
 
                     <div className="px-3 pb-3 background_rounded bg-white" id="div1">
                         <div className="text">
