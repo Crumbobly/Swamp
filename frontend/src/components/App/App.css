@@ -1,0 +1,55 @@
+@font-face { font-family: "text_font1"; src: url("../../assets/fonts/text_font1.ttf"); }
+@font-face { font-family: "LXGW"; src: url("../../assets/fonts/LXGW.ttf"); }
+@font-face { font-family: "Underdog"; src: url("../../assets/fonts/Underdog.ttf"); }
+
+
+:root {
+    --dark-green: #709d37;
+    --light-green:#86C232;
+    --dark-grey:#222629;
+    --medium-grey:#474B4F;
+    --light-grey:#6B6E70;
+    --white-grey: #e5e5e5;
+    --white: #FFFFFF;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--white-grey);
+}
+
+p, h1, h2, h3, h4, h5, label{
+    color: var(--dark-grey);
+}
+
+.background_rounded{
+    border-radius: 15px;
+}
+
+.text p{
+    font-size: 0.9rem;
+    font-weight:bolder;
+    display:inline;
+}
+
+.text{
+    padding-left: 0.14rem;
+    padding-top: 1rem;
+    padding-bottom: .7rem;
+    border-bottom: 2px solid var(--dark-grey);
+}
+
