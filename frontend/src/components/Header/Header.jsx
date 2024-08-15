@@ -57,7 +57,7 @@ function Header() {
                         </ul>
                     </div>
 
-                    <div className=" align-items-center">
+                    <div className="align-items-center">
 
                         <a className="nav-link p-0 ms-1 " href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
