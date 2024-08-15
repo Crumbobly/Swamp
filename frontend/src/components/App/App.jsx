@@ -10,6 +10,7 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import Header from '../Header/Header'
 import Main from '../Pages/MainPage/Main/Main'
 import Posts from '../Pages/PostsPage/Posts';
+import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/posts" element={<Posts />} />
+                <Route path='*' element={<NotFoundPage />}/>
             </Routes>
 
         </BrowserRouter>

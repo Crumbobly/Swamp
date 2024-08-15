@@ -63,6 +63,11 @@ fun main() {
 //    )
 //
 
+    val a = routes(
+        "/" bind Method.GET to serveStaticFile("../frontend/build/index.html"),
+        static(ResourceLoader.Directory("../frontend/build"))
+    )
+
     val app: HttpHandler = { request: Request ->
         when {
             request.uri.path == "/redirect" -> Response(Status.OK).body("<div>13</div>")
@@ -73,6 +78,6 @@ fun main() {
         }
     }
 
-    app.asServer(Netty(8080)).start()
+    a.asServer(Netty(8080)).start()
     println("http://localhost:8080/")
 }

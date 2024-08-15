@@ -21,7 +21,6 @@ export default function Posts() {
                             <p className="mb-4">Популярные теги</p>
                         </div>
 
-
                         <div className="footer-text py-4">
 
                             <div className="contents">
