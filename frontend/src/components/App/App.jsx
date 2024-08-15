@@ -3,24 +3,29 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
-import { Route, Routes, Link } from 'react-router-dom';
+import {Route, Routes, BrowserRouter} from 'react-router-dom';
 
 import Header from '../Header/Header'
 import Main from '../MainPage/Main/Main'
-import Post from '../MainPage/Post/Post';
+import Posts from '../MainPage/Posts/Posts';
 
 
 function App() {
 
     return (
-        <>
-            <Header></Header>
+        <BrowserRouter>
+
+            <Header>
+
+            </Header>
+
+
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/posts" element={<Post />} />
+                <Route path="/posts" element={<Posts />} />
             </Routes>
 
-        </>
+        </BrowserRouter>
     );
 }
 

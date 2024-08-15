@@ -13,9 +13,7 @@ import Header from "../../Header/Header";
 
 function Main() {
 
-
     return (
-
 
         <main>
             <div className="row mx-4 mx-md-4 py-3 d-flex overflow-hidden flex-column">

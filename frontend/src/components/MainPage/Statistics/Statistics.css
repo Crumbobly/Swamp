@@ -1,0 +1,30 @@
+.statistic_item{
+    height: 1.5rem;
+    background-color: var(--light-green);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.statistic_item img {
+    margin-left: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.statistic_item p {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding-left: 0.5rem;
+    display: inline;
+}
+
+
+.statistic_item .counter {
+    margin: 0 0.5rem 0 auto;
+    white-space: nowrap;
+}
+
+.statistic_item p:not(.counter){
+    padding-right: 1rem;
+}

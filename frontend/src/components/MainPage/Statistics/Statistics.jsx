@@ -5,17 +5,18 @@ import like from '../../../assets/images/icons/like.svg'
 import pencil from '../../../assets/images/icons/pencil-fill.svg'
 import person from '../../../assets/images/icons/person-fill.svg'
 
+import './Statistics.css'
 
 export default function Statistics() {
 
     return (
 
         <div className="px-3 pb-3 background_rounded bg-white" id="div1">
-            <div className="text">
+            <div className="text mb-3">
                 <p>Статистика</p>
             </div>
 
-            <div className="statistic_item mt-3 rounded-1" data-tooltip="73453">
+            <div className="statistic_item mt-2 rounded-1" data-tooltip="73453">
                 <img src={pencil} alt="posts" />
 
                 <p className="m-0">
