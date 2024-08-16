@@ -11,6 +11,8 @@ import Header from '../Header/Header'
 import Main from '../Pages/MainPage/Main/Main'
 import Posts from '../Pages/PostsPage/Posts';
 import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
+import Login from "../Pages/AuthorizationPage/Login/Login";
+import Registration from "../Pages/AuthorizationPage/Registration/Registration";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/posts" element={<Posts />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/reg" element={<Registration />} />
                 <Route path='*' element={<NotFoundPage />}/>
             </Routes>
 

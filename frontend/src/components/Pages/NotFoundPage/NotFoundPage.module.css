@@ -8,6 +8,17 @@
 }
 
 .img_container img {
-    height: 50%;
     width: 50%;
+    height: auto; /* Сначала задаем ширину 50% и сохраняем соотношение сторон */
+}
+
+body{
+    background-color: var(--white-grey);
+}
+
+@media (max-aspect-ratio: 1/1) { /* Условие, когда ширина больше высоты */
+    .img_container img {
+        width: auto; /* Убираем фиксированную ширину */
+        height: 50%; /* Задаем высоту 50% */
+    }
 }

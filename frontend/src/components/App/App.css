@@ -1,5 +1,4 @@
-@font-face { font-family: "text_font1"; src: url("../../assets/fonts/text_font1.ttf"); }
-@font-face { font-family: "LXGW"; src: url("../../assets/fonts/LXGW.ttf"); }
+
 @font-face { font-family: "Underdog"; src: url("../../assets/fonts/Underdog.ttf"); }
 
 
@@ -25,7 +24,6 @@ body, #root {
 }
 
 
-
 main {
     flex-grow: 1;
     display: flex;
@@ -34,7 +32,7 @@ main {
     background-color: var(--white-grey);
 }
 
-p, h1, h2, h3, h4, h5, label{
+p, h1, h2, h3, h4, h5, h6, label{
     color: var(--dark-grey);
 }
 

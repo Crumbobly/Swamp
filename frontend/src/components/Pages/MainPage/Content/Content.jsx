@@ -6,7 +6,7 @@ function Content() {
     return (
         <>
             <div className={`background_rounded mb-3 ${styles.img_container}`} style={{height: 350 + 'px'}}>
-                <img src="images/swamp.svg" alt="Болото фон"/>
+                <img src="/images/swamp.svg" alt="Болото фон"/>
             </div>
 
             <div className="background_rounded bg-white mb-3">
@@ -15,7 +15,7 @@ function Content() {
                     <h6 className="m-0">Новости</h6>
                 </div>
 
-                <p className="ps-4">
+                <p className="ps-4 pb-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                     consequuntur
                     dolorem,
@@ -40,7 +40,7 @@ function Content() {
                     <h6 className="m-0">Информация о сайте</h6>
                 </div>
 
-                <p className="ps-4 mb-0" style={{height: 1000 + 'px'}}>
+                <p className="ps-4 pb-3 mb-0" style={{height: 1000 + 'px'}}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                     consequuntur
                     dolorem,

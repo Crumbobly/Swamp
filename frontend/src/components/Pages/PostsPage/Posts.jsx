@@ -1,7 +1,7 @@
 
 import logo from '../../../assets/images/icons/images-svgrepo-com.svg';
-import '../../../assets/css/Posts.css';
-import '../../../assets/css/general.css';
+import './Posts.css';
+
 
 export default function Posts() {
 
