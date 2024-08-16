@@ -1,0 +1,13 @@
+@import "bootstrap";
+
+/* ------- customize primary buttons -------- */
+$color:#77cccc;
+
+.btn-primary {
+  @include button-variant();
+  @include button-variant($color, darken($color, 7.5%), darken($color, 10%), lighten($color,5%), lighten($color, 10%), darken($color,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($color, #222222, lighten($color,5%), $color);
+}
