@@ -1,0 +1,32 @@
+.login_wrap {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    position: relative;
+
+}
+
+.login_form {
+    border-radius: 1rem;
+    background-color: var(--white-grey);
+    font-family: "Underdog", sans-serif;
+
+
+}
+
+.login_wrap::before {
+    content: "";
+    background-size: cover;
+
+    position: absolute;
+    width: 100%;
+    background: url('../../../../assets/images/swamp.svg') no-repeat center center;
+    height: 100%;
+
+    z-index: -1;
+
+}
+
