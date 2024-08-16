@@ -12,21 +12,15 @@
 .login_form {
     border-radius: 1rem;
     background-color: var(--white-grey);
-    font-family: "Underdog", sans-serif;
-
-
 }
 
 .login_wrap::before {
     content: "";
-    background-size: cover;
-
     position: absolute;
     width: 100%;
-    background: url('../../../../assets/images/swamp.svg') no-repeat center center;
+    background: url('../../../assets/images/swamp.svg') no-repeat center center;
+    background-size: cover;
     height: 100%;
-
+    opacity: .85;
     z-index: -1;
-
 }
-

@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Content.module.css"
-
+import img from "../../../../assets/images/swamp.svg"
 
 function Content() {
     return (
         <>
             <div className={`background_rounded mb-3 ${styles.img_container}`} style={{height: 350 + 'px'}}>
-                <img src="/images/swamp.svg" alt="Болото фон"/>
+                <img src={img} alt="Болото фон"/>
             </div>
 
             <div className="background_rounded bg-white mb-3">

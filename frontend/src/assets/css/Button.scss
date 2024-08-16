@@ -1,13 +1,23 @@
-@import "bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 /* ------- customize primary buttons -------- */
-$color:#77cccc;
+$dark-green: #709d37;
+$light-green:#86C232;
+$dark-grey:#222629;
+$medium-grey:#474B4F;
+$light-grey:#6B6E70;
+$white-grey: #e5e5e5;
+$white: #FFFFFF;
 
 .btn-primary {
-  @include button-variant();
-  @include button-variant($color, darken($color, 7.5%), darken($color, 10%), lighten($color,5%), lighten($color, 10%), darken($color,30%));
+  @include button-variant($dark-green, $dark-green, $white, lighten($dark-green, 5%), lighten($dark-green, 5%), $white);
+
 }
 
 .btn-outline-primary {
-  @include button-outline-variant($color, #222222, lighten($color,5%), $color);
+  @include button-outline-variant($dark-green, $dark-grey, $light-green, $light-green, $dark-grey);
 }
+
+//TODO("Добавить чекбокс")
+
+//TODO("Добавить подсказку required")
