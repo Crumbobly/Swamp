@@ -35,7 +35,7 @@ export default function Login() {
                             <Link className="text-decoration-none ms-auto" to="/recovery">Забыли пароль?</Link>
                         </div>
 
-                        <div className="d-flex flex-wrap align-items-center">
+                        <div className="d-flex align-items-center">
                             <button className="btn btn-primary my-3 me-3">
                                 Вход
                             </button>
