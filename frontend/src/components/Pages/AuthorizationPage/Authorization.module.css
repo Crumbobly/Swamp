@@ -12,6 +12,7 @@
 .login_form {
     border-radius: 1rem;
     background-color: var(--white-grey);
+    min-width: 35%;
 }
 
 .login_wrap::before {
@@ -23,4 +24,14 @@
     height: 100%;
     opacity: .85;
     z-index: -1;
+}
+
+a{
+    color: var(--dark-grey);
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+a:hover{
+    color: var(--dark-green);
 }

@@ -5,7 +5,7 @@ export default function Registration() {
 
     return (
         <div className={styles.login_wrap}>
-            <div className={`border d-flex flex-column ${styles.login_form}`}>
+            <div className={`border d-flex flex-column mx-3 ${styles.login_form}`}>
 
                 <div className="mx-4 p-3">
 
@@ -36,20 +36,17 @@ export default function Registration() {
                             <input type="password" className="form-control" id="passwordRepeatInput" required/>
                         </div>
 
-                        <div className="d-flex flex-wrap">
-
-                            <div className="form-check">
-                                <input type="checkbox" className="form-check-input" id="rememberMeCheckBox"/>
-                                <label className="form-check-label" htmlFor="rememberMeCheckBox">Запомнить меня</label>
-                            </div>
-
-                            <Link className="text-decoration-none ms-auto" href="#" to="/recovery">Забыли пароль?</Link>
-
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input" id="rememberMeCheckBox"/>
+                            <label className="form-check-label" htmlFor="rememberMeCheckBox">Запомнить меня</label>
                         </div>
 
-                        <button className="btn btn-primary my-3" type="submit">
-                            Регистрация
-                        </button>
+                        <div className="d-flex align-items-center">
+                            <button className="btn btn-primary my-3 me-3" type="submit">
+                                Регистрация
+                            </button>
+                            <Link className="ms-auto text-decoration-none" to="/login">Есть аккаунт?</Link>
+                        </div>
 
                     </form>
                 </div>

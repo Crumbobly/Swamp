@@ -1,10 +1,11 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css'
 import '../../assets/css/Scrollbar.css'
 import '../../assets/css/Tooltip.css'
-import '../../assets/css/Button.scss'
+import '../../assets/css/BootstrapMod.scss'
 
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 

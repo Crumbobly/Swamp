@@ -4,6 +4,7 @@ import './Header.css'
 
 import {Link} from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
+import {Dropdown, DropdownMenu, NavDropdown} from "react-bootstrap";
 
 
 function Header() {
@@ -57,18 +58,24 @@ function Header() {
                         </ul>
                     </div>
 
-                    <div className="align-items-center">
-
-                        <a className="nav-link p-0 ms-1 " href="#">
+                    <Dropdown className="px-0">
+                        <Dropdown.Toggle as="button" className="btn px-0 d-flex ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                 className="bi bi-person-circle navbar_user_icon" viewBox="0 0 16 16">
-
+                                 className="navbar_user_icon" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                 <path fillRule="evenodd"
                                       d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                             </svg>
-                        </a>
-                    </div>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Link to="/login" className="dropdown-item ">
+                                Вход
+                            </Link>
+
+                        </Dropdown.Menu>
+                    </Dropdown>
+
                 </div>
 
                 <div className="navbar-nav additional_navbar justify-content-around w-100" hidden="hidden">

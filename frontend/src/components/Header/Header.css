@@ -27,11 +27,10 @@ nav a{
     font-weight: lighter;
 }
 
-/*TODO("Опять сломалось")*/
 .navbar_user_icon{
     fill: var(--dark-green);
 }
-.navbar_user_icon{
+.navbar_user_icon:hover{
     fill: var(--light-green);
 }
 
@@ -47,6 +46,17 @@ nav a{
     color: var(--light-green)
 }
 
+nav .dropdown-toggle:after{
+    content: none !important;
+}
+nav .dropdown-item:hover, .dropdown-item:focus {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: var(--bs-dropdown-link-hover-bg);
+}
+nav .dropdown-item:active{
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: var(--white-grey);
+}
 
 @media only screen and (max-width: 575px) {
     .general_navbar{
