@@ -2,7 +2,7 @@
 function StatisticItem({children, logo, statistic_item_name}){
 
     return(
-        <div className="statistic_item mt-2 rounded-1" data-tooltip={children}>
+        <div className="statistic_item mt-2 rounded-1" data-tooltip={children} data-tooltip-copy={children}>
             <img src={logo} alt="posts" />
 
             <p className="m-0">

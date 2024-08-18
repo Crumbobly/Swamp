@@ -9,6 +9,7 @@ import '../../assets/css/BootstrapMod.scss'
 
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 
+
 import Header from '../Header/Header'
 import Main from '../Pages/MainPage/Main/Main'
 import Posts from '../Pages/PostsPage/Posts';
@@ -20,6 +21,7 @@ import Registration from "../Pages/AuthorizationPages/Registration/Registration"
 function App() {
 
     return (
+
         <BrowserRouter>
 
             <Header>
@@ -28,17 +30,21 @@ function App() {
 
 
             <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="/posts" element={<Posts />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/reg" element={<Registration />} />
-                <Route path='*' element={<NotFoundPage />}/>
+                <Route path="/" element={<Main/>}/>
+                <Route path="/posts" element={<Posts/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/reg" element={<Registration/>}/>
+                <Route path='*' element={<NotFoundPage/>}/>
             </Routes>
 
+            <footer>
+
+            </footer>
+
         </BrowserRouter>
+
     );
 }
-
 
 
 export default App;

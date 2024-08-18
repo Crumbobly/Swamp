@@ -5,57 +5,46 @@ import img from "../../../../assets/images/swamp.svg"
 function Content() {
     return (
         <>
-            <div className={`background_rounded mb-3 ${styles.img_container}`} style={{height: 350 + 'px'}}>
+            <div className={`background_rounded h-50 ${styles.img_container}`}>
                 <img src={img} alt="Болото фон"/>
             </div>
 
-            <div className="background_rounded bg-white mb-3 ">
+            <div className="minh-25 d-flex pt-3">
+                <div className={`background_rounded bg-white flex-1 `} id="news">
+                    <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
+                        <h6 className="m-0">Новости</h6>
+                    </div>
 
-                <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
-                    <h6 className="m-0">Новости</h6>
+                    <p className="ps-4 pb-3 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
+                        consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit
+                        possimus quam qui ratione recusandae soluta tenetur.
+
+                    </p>
                 </div>
-
-                <p className="ps-4 pb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
-                    consequuntur
-                    dolorem,
-                    doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
-                    ratione
-                    recusandae soluta tenetur.
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
-                    consequuntur
-                    dolorem,
-                    doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
-                    ratione
-                    recusandae soluta tenetur.
-
-                </p>
-
             </div>
 
-            <div className="background_rounded bg-white mb-3 mb-lg-0 ">
+            <div className="minh-25 d-flex pt-3">
+                <div className={`background_rounded bg-white flex-1`} id="info">
+                    <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
+                        <h6 className="m-0">Информация о сайте</h6>
+                    </div>
 
-                <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
-                    <h6 className="m-0">Информация о сайте</h6>
+                    <p className="ps-4 pb-3 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
+                        consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit
+                    </p>
                 </div>
-
-                <p className="ps-4 pb-3 mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
-                    consequuntur
-                    dolorem,
-                    doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit possimus quam qui
-                    ratione
-                    recusandae soluta tenetur.
-
-                </p>
-
             </div>
 
-            <div id="newStatisticDiv">
+            <div className="pt-3 pt-lg-0" id="newStatisticDiv">
 
             </div>
             {/* TODO("Какой-то прикол с нижним отступом на телефоне (Safari)")*/}
+
+
+
+
         </>
     )
 }

@@ -26,7 +26,7 @@ function Main() {
     return (
 
         <main>
-            <div className="row mx-4 mx-md-4 py-3 d-flex overflow-hidden flex-column h-100">
+            <div className="row mx-2 mx-md-4 py-3 d-flex overflow-hidden flex-column h-100">
 
                 <div className="col col-auto col-xl-2 col-lg-3 p-0 background_rounded bg-white mt-0 h-100"
                      id="parentStatisticDiv">

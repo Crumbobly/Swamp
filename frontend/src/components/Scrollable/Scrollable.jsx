@@ -1,9 +1,9 @@
 import React from "react";
 import "./Scrollable.css"
 
-function Scrollable({children}){
+function Scrollable({children}) {
 
-    return(
+    return (
         <div className="scrollable pe-3">
             {children}
         </div>

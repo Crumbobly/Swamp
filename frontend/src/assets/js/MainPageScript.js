@@ -12,7 +12,7 @@ function handleResize() {
             parentStatisticDiv.appendChild(statisticDiv);
         }
     } else {
-        console.error('Один или несколько элементов не найдены в DOM.');
+        return 0;
     }
 }
 
@@ -23,6 +23,9 @@ function tooltipLogic() {
         const statisticItem = trigger.closest('.statistic_item');
 
         if (isTextOverflowing(trigger)) {
+            if (!statisticItem.hasAttribute("data-tooltip")){
+                statisticItem.setAttribute("data-tooltip", statisticItem.getAttribute("data-tooltip-copy"))
+            }
             return 0;
         } else {
             statisticItem.removeAttribute("data-tooltip");

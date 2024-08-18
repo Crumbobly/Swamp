@@ -12,11 +12,16 @@
     --white: #FFFFFF;
 }
 
+*{
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
 html, body, #root {
     height: 100vh;
     margin: 0;
     overflow: hidden;
 }
+
 
 body, #root {
     display: flex;
@@ -53,4 +58,19 @@ a, p, h1, h2, h3, h4, h5, h6, label{
     border-bottom: 2px solid var(--dark-grey);
 }
 
+.minh-100{
+    min-height: 100% !important;
+}
+
+.minh-50{
+    min-height: 50% !important;
+}
+
+.minh-25{
+    min-height: 25% !important;
+}
+
+.flex-1{
+    flex: 1;
+}
 
