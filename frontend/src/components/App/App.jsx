@@ -13,8 +13,8 @@ import Header from '../Header/Header'
 import Main from '../Pages/MainPage/Main/Main'
 import Posts from '../Pages/PostsPage/Posts';
 import NotFoundPage from '../Pages/NotFoundPage/NotFoundPage'
-import Login from "../Pages/AuthorizationPage/Login/Login";
-import Registration from "../Pages/AuthorizationPage/Registration/Registration";
+import Login from "../Pages/AuthorizationPages/Login/Login";
+import Registration from "../Pages/AuthorizationPages/Registration/Registration";
 
 
 function App() {

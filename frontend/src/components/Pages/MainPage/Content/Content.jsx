@@ -9,7 +9,7 @@ function Content() {
                 <img src={img} alt="Болото фон"/>
             </div>
 
-            <div className="background_rounded bg-white mb-3">
+            <div className="background_rounded bg-white mb-3 ">
 
                 <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
                     <h6 className="m-0">Новости</h6>
@@ -34,13 +34,13 @@ function Content() {
 
             </div>
 
-            <div className="background_rounded bg-white mb-3 mb-lg-0">
+            <div className="background_rounded bg-white mb-3 mb-lg-0 ">
 
                 <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
                     <h6 className="m-0">Информация о сайте</h6>
                 </div>
 
-                <p className="ps-4 pb-3 mb-0" style={{height: 1000 + 'px'}}>
+                <p className="ps-4 pb-3 mb-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                     consequuntur
                     dolorem,

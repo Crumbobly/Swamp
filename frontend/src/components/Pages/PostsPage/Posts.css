@@ -10,26 +10,30 @@
     margin-bottom:0.1em;
 }
 
+.del{
+    border-radius: 1rem;
+    height: 500px;
+    background-color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.paginator{
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.tags_items {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .contents{
     display:flex;
     align-items:start;
     padding-bottom: 0.4rem;
-
-}
-
-
-.r_text{
-    padding-left: 0.6em;
-}
-
-
-.l-a{
-    font-size:0.94em;
-    font-weight:bolder;
-}
-
-.content_rl{
-    display:flex;
-    align-items:center;
+    flex-shrink: 0;
 
 }
