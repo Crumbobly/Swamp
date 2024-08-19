@@ -15,7 +15,7 @@ function Header() {
 
             <nav className="navbar navbar-expand-lg navbar-dark pb-0 pb-sm-2">
 
-                <div className="container-fluid mx-4 p-0 ">
+                <div className="container-fluid mx-3 mx-md-4 p-0 ">
 
                     <a className="navbar-brand">
                         <img src={favicon} alt="frog" width="30" height="24"

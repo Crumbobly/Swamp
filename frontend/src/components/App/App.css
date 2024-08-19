@@ -1,31 +1,40 @@
-
-@font-face { font-family: "Underdog"; src: url("../../assets/fonts/Underdog.ttf"); }
+@font-face {
+    font-family: "Underdog";
+    src: url("../../assets/fonts/Underdog.ttf");
+}
 
 
 :root {
     --dark-green: #709d37;
-    --light-green:#86C232;
-    --dark-grey:#222629;
-    --medium-grey:#474B4F;
-    --light-grey:#6B6E70;
+    --light-green: #86C232;
+    --dark-grey: #222629;
+    --medium-grey: #474B4F;
+    --light-grey: #6B6E70;
     --white-grey: #e5e5e5;
     --white: #FFFFFF;
 }
 
-*{
+* {
     font-size: clamp(1rem, 1vw, 2rem);
 }
 
-html, body, #root {
+body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
-
-body, #root {
+#root {
+    height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 575px) {
+    #root {
+        padding-bottom: 4rem;
+    }
+
 }
 
 
@@ -37,40 +46,40 @@ main {
     background-color: var(--white-grey);
 }
 
-a, p, h1, h2, h3, h4, h5, h6, label{
+a, p, h1, h2, h3, h4, h5, h6, label {
     color: var(--dark-grey);
 }
 
-.background_rounded{
+.background_rounded {
     border-radius: 15px;
 }
 
-.text p{
+.text p {
     font-size: 0.9rem;
-    font-weight:bolder;
-    display:inline;
+    font-weight: bolder;
+    display: inline;
 }
 
-.text{
+.text {
     padding-left: 0.14rem;
     padding-top: 1rem;
     padding-bottom: .7rem;
     border-bottom: 2px solid var(--dark-grey);
 }
 
-.minh-100{
+.minh-100 {
     min-height: 100% !important;
 }
 
-.minh-50{
+.minh-50 {
     min-height: 50% !important;
 }
 
-.minh-25{
+.minh-25 {
     min-height: 25% !important;
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
 }
 
