@@ -9,7 +9,7 @@
     --light-green: #86C232;
     --dark-grey: #222629;
     --medium-grey: #474B4F;
-    --light-grey: #6B6E70;
+    --light-grey: #cfd3cb;
     --white-grey: #e5e5e5;
     --white: #FFFFFF;
 }
@@ -18,23 +18,19 @@
     font-size: clamp(1rem, 1vw, 2rem);
 }
 
+html, body, #root{
+    height: 100%;
+}
+
 body {
-    height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
+
 #root {
-    height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-@media only screen and (max-width: 575px) {
-    #root {
-        padding-bottom: 4rem;
-    }
-
 }
 
 

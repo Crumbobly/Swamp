@@ -4,7 +4,7 @@ import "./Scrollable.css"
 function Scrollable({children}) {
 
     return (
-        <div className="scrollable pe-3">
+        <div className="scrollable pe-3 ">
             {children}
         </div>
     )

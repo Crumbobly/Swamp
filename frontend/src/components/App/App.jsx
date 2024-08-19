@@ -37,9 +37,7 @@ function App() {
                 <Route path='*' element={<NotFoundPage/>}/>
             </Routes>
 
-            <footer>
 
-            </footer>
 
         </BrowserRouter>
 

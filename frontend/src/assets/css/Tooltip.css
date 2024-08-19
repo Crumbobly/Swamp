@@ -18,7 +18,7 @@
     color: var(--dark-grey);
     pointer-events: none;
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform .5s, opacity .5s;
 }
 
 [data-tooltip]:hover::after {

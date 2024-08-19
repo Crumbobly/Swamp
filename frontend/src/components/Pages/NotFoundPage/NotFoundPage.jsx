@@ -4,8 +4,10 @@ import img from '../../../assets/images/404.png'
 
 function NotFoundPage(){
     return (
-        <div className={styles.img_container}>
-            <img src={img} alt="404"/>
+        <div className={styles.wrapper}>
+            <div className={styles.img_container}>
+                <img src={img} alt="404"/>
+            </div>
         </div>
     )
 }
