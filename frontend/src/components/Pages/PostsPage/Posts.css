@@ -1,16 +1,6 @@
 
-.bt-s{
-    padding-top: 1.7rem;
-}
 
-
-.contents p{
-    display:inline;
-    padding-left:0.6rem;
-    margin-bottom:0.1em;
-}
-
-.del{
+.post{
     border-radius: 1rem;
     height: 500px;
     background-color: var(--white);
@@ -23,17 +13,3 @@
     border-radius: 1rem;
 }
 
-.tags_items {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.contents{
-    display:flex;
-    align-items:start;
-    padding-bottom: 0.4rem;
-    flex-shrink: 0;
-
-}
