@@ -41,4 +41,15 @@ $white: #FFFFFF;
 
 }
 
-//TODO("Поля ввода")
+
+input.form-control:hover{
+  border-color: $light-green;
+}
+input.form-control:active{
+  border-color: $light-green;
+}
+input.form-control:focus{
+  border-color: $light-green;
+  box-shadow: none;
+  outline: 0 none;
+}

@@ -13,12 +13,13 @@
     border-radius: 15px;
 }
 
+.cut-height-scrollbar::-webkit-scrollbar-track
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 ::-webkit-scrollbar-thumb{
     background-color: var(--light-grey);
     border-radius: 15px;
-    opacity: .7;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    opacity: .15;
 }

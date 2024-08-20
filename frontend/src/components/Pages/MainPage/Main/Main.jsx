@@ -33,10 +33,9 @@ function Main() {
                     <Statistics/>
                 </div>
 
-                {/*TODO("Отступ на телефоне")*/}
                 <div className="col col-12 col-xl-10 col-lg-9 p-0 ps-lg-3 d-flex overflow-hidden h-100">
 
-                    <Scrollable>
+                    <Scrollable class="cut-height-scrollbar">
                         <MainPageContent>
 
                         </MainPageContent>

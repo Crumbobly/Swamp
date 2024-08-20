@@ -68,7 +68,6 @@ function Content() {
             <div className="mt-3 pt-lg-0 mb-3" id="newStatisticDiv">
 
             </div>
-            {/* TODO("Какой-то прикол с нижним отступом на телефоне (Safari)")*/}
 
 
         </>
