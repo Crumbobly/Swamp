@@ -1,10 +1,20 @@
 import './Posts.css';
 import Scrollable from "../../Scrollable/Scrollable";
-import React from "react";
-import logo from '../../../assets/images/icons/images-svgrepo-com.svg';
-import Navbar from "./Navbar/Navbar";
+import React, {useEffect} from "react";
+import {DestroyPostsPageScript, InitPostsPageScript} from "../../../assets/js/PostsPageScript";
 
 export default function Posts() {
+
+    useEffect(() => {
+        // Инициализация скрипта
+        InitPostsPageScript()
+
+        return () => {
+            // Очистка скрипта при размонтировании компонента
+            DestroyPostsPageScript()
+        };
+    }, []);
+
 
 
     return (
