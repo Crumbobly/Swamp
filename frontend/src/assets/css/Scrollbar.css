@@ -9,8 +9,7 @@
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--white);
-    border-radius: 15px;
+    background-color: var(--dark-grey);
 }
 
 .cut-height-scrollbar::-webkit-scrollbar-track
@@ -20,6 +19,6 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--light-grey);
+    background-color: var(--dark-green);
     border-radius: 15px;
 }
