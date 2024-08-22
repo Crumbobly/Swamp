@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import favicon from '../../assets/images/favicon/frog-favicon.svg'
 import './Header.css'
 
@@ -9,6 +9,11 @@ import IconsBlock from "./IconsBlock";
 
 // TODO("Прокинуть expanded")
 function Header() {
+    const [expanded, setExpanded] = useState(false);
+
+    const handleSearchClick = () => {
+        setExpanded(!expanded);
+    };
 
     return (
         <>
@@ -32,7 +37,7 @@ function Header() {
 
                         {/* Navbar icons */}
                         <div className="d-flex flex-row">
-                            <IconsBlock />
+                            <IconsBlock expande={expanded} onClick={handleSearchClick}/>
                         </div>
 
                     </div>
@@ -47,7 +52,7 @@ function Header() {
                 {/* Place for search input */}
                 <Routes>
                     <Route path="/posts" element={
-                        <nav className="navbar navbar-dark p-3" id="new_place_for_search_input">
+                        <nav className={` nav__dropdownn ${expanded ? "navbar navbar-dark p-3 " : "active" } `} id="new_place_for_search_input" >
 
                         </nav>
 

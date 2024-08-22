@@ -5,6 +5,7 @@
     justify-content: center;
     overflow: hidden;
     align-items: center;
+    overflow:hidden;
 }
 
 .wrapper{
@@ -15,6 +16,7 @@
 .img_container img {
     width: 50%;
     height: auto; /* Сначала задаем ширину 50% и сохраняем соотношение сторон */
+
 }
 
 @media (max-aspect-ratio: 1/1) { /* Условие, когда ширина больше высоты */
