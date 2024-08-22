@@ -52,7 +52,7 @@ function Header() {
                 {/* Place for search input */}
                 <Routes>
                     <Route path="/posts" element={
-                        <div className={`nav__dropdown ${expanded ? "active" : "" } `} id="new_place_for_search_input" >
+                        <div className={`search_field_dropdown ${expanded ? "active" : ""} `} id="new_place_for_search_input" >
 
                         </div>
 

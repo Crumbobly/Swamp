@@ -39,8 +39,6 @@
 }
 
 
-
-
 @media only screen and (max-width: 767px) {
 
     .search-field button.active {
@@ -51,7 +49,7 @@
         fill: var(--dark-green);
     }
 
-    .nav__dropdown {
+    .search_field_dropdown {
         background-color: var(--dark-grey);
         max-height: 0;
         padding: 0;
@@ -59,28 +57,28 @@
         transition: max-height 0.15s ease, padding 0.15s ease;
     }
 
-    .nav__dropdown.active {
+    .search_field_dropdown.active {
         /* Ну надо тут 500px, ещё вопросы!? */
         max-height: 500px;
         padding: 1rem;
         transition: max-height 0.15s ease, padding 0.15s ease;
     }
 
-    .nav__dropdown input {
+    .search_field_dropdown input {
         opacity: 0;
         transition: opacity 0.3s;
     }
 
-    .nav__dropdown.active input {
+    .search_field_dropdown.active input {
         opacity: 1;
     }
 
-    .nav__dropdown:not(.active) input {
+    .search_field_dropdown:not(.active) input {
         opacity: 0;
         transition: opacity 0.3s ease;
     }
 
-    .nav__dropdown:not(.active) {
+    .search_field_dropdown:not(.active) {
         transition: max-height 0.15s ease, padding 0.15s ease;
     }
 

@@ -20,43 +20,8 @@ export default function Posts() {
     return (
 
         <main>
-
-            <div className="row mx-2 mx-md-4 d-flex overflow-hidden flex-column h-100">
-
-                <div className="d-flex overflow-hidden flex-column h-100">
-
-
-                    <Scrollable>
-                        <div className="post">
-
-                        </div>
-
-                        <div className="post">
-
-                        </div>
-
-                        <div className="post">
-
-                        </div>
-
-                        <div className="post">
-
-                        </div>
-
-                        <div className="post">
-
-                        </div>
-
-                        <div className="paginator">
-
-                        </div>
-
-                    </Scrollable>
-
-                </div>
-
-            </div>
-
+            <div style={{height: 1000+"px", backgroundColor:"honeydew"}}></div>
+            <div style={{height: 1000+"px", backgroundColor:"lightpink"}}></div>
 
         </main>
     )
