@@ -38,16 +38,7 @@
     background-color: var(--white);
 }
 
-.nav__dropdown {
-    display: none;
-    background-color: var(--dark-grey);
-}
 
-.nav__dropdown input {
-    opacity: 0;
-    height: 0;
-    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-}
 
 
 @media only screen and (max-width: 767px) {
@@ -60,39 +51,38 @@
         fill: var(--dark-green);
     }
 
+    .nav__dropdown {
+        background-color: var(--dark-grey);
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: max-height 0.15s ease, padding 0.15s ease;
+    }
+
     .nav__dropdown.active {
-        display: flex;
+        /* Ну надо тут 500px, ещё вопросы!? */
+        max-height: 500px;
+        padding: 1rem;
+        transition: max-height 0.15s ease, padding 0.15s ease;
+    }
+
+    .nav__dropdown input {
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
     .nav__dropdown.active input {
-        height: 100%;
         opacity: 1;
     }
 
-}
-
-@keyframes changeHeight {
-
-
-    0% {
-        display: flex;
-        height:0;
-    }
-    20%{
-        height:20%;
-    }
-    40% {
-        height:40%;
-    }
-    60%{
-        height:60%;
-    }
-    80%{
-        height:80%;
+    .nav__dropdown:not(.active) input {
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 
-    100% {
-        height:100%;
-
+    .nav__dropdown:not(.active) {
+        transition: max-height 0.15s ease, padding 0.15s ease;
     }
+
+
 }
