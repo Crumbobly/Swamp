@@ -3,14 +3,14 @@ import SearchField from "./SearchField";
 import {Link, NavLink, Route, Routes} from "react-router-dom";
 import {Dropdown} from "react-bootstrap";
 
-function IconsBlock({expande,onClick}) {
+function IconsBlock( {expanded, onClick} ) {
     return (
         <>
             <Routes>
                 <Route path="/posts" element={
                     <>
                         {/* icon 1 */}
-                        <SearchField expande={expande} onClick={onClick}>
+                        <SearchField expanded={expanded} onClick={onClick}>
 
                         </SearchField>
 

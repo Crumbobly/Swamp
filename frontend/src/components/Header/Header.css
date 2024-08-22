@@ -63,10 +63,6 @@ nav .dropdown-item:active{
     background-color: var(--white-grey);
 }
 
-#new_place_for_search_input{
-    display: none;
-    transition: all 0.5s ease-in-out;
-}
 
 @media only screen and (max-width: 575px) {
     .general_navbar_links{
@@ -78,7 +74,5 @@ nav .dropdown-item:active{
         flex-direction: row;
         visibility: visible;
     }
-    #new_place_for_search_input{
-        display: block;
-    }
 }
+

@@ -1,21 +1,21 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import "./SearchField.css"
 
-const SearchBar = ({ expande, onClick }) => {  // Деструктуризация пропсов
+const SearchBar = ( { expanded, onClick } ) => {
     return (
         <div className="d-flex align-items-center me-2 search-field" id="search-field">
             <button
                 type="button"
-                onClick={onClick}  // Передача функции onClick
-                className={expande ? "active" : ""}
+                onClick={onClick}
+                className={expanded ? "active" : ""}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
                     fill="currentColor"
-                    className={`bi bi-search ${expande ? "navbar_icon_dark" : "navbar_icon"}`}
+                    className={`bi bi-search ${expanded ? "navbar_icon_dark" : "navbar_icon"}`}
                     viewBox="0 0 16 16"
                 >
                     <path
@@ -26,7 +26,7 @@ const SearchBar = ({ expande, onClick }) => {  // Деструктуризаци
 
             <input
                 type="text"
-                className={`form-control ${expande ? "active" : ""}`}
+                className={`form-control ${expanded ? "active" : ""}`}
                 placeholder="Поиск"
                 id="search-field-input"
             />

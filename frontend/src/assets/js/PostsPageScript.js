@@ -4,7 +4,7 @@ function handleResize() {
     const newPlaceForSearchInput = document.getElementById('new_place_for_search_input');
 
     if (searchInput && searchField && newPlaceForSearchInput) {
-        if (window.innerWidth < 575) {
+        if (window.innerWidth < 767) {
             if (!newPlaceForSearchInput.contains(searchInput)) {
                 newPlaceForSearchInput.appendChild(searchInput);
             }

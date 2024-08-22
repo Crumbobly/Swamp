@@ -7,7 +7,7 @@ import Links from "./Links";
 import IconsBlock from "./IconsBlock";
 
 
-// TODO("Прокинуть expanded")
+
 function Header() {
     const [expanded, setExpanded] = useState(false);
 
@@ -37,7 +37,7 @@ function Header() {
 
                         {/* Navbar icons */}
                         <div className="d-flex flex-row">
-                            <IconsBlock expande={expanded} onClick={handleSearchClick}/>
+                            <IconsBlock expanded={expanded} onClick={handleSearchClick}/>
                         </div>
 
                     </div>
@@ -52,9 +52,9 @@ function Header() {
                 {/* Place for search input */}
                 <Routes>
                     <Route path="/posts" element={
-                        <nav className={` nav__dropdownn ${expanded ? "navbar navbar-dark p-3 " : "active" } `} id="new_place_for_search_input" >
+                        <div className={`nav__dropdown p-3 ${expanded ? "active" : "" } `} id="new_place_for_search_input" >
 
-                        </nav>
+                        </div>
 
                     }/>
                 </Routes>
