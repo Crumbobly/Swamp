@@ -4,6 +4,8 @@ import {Link, NavLink, Route, Routes} from "react-router-dom";
 import {Dropdown} from "react-bootstrap";
 
 function IconsBlock( {expanded, onClick} ) {
+
+
     return (
         <>
             <Routes>

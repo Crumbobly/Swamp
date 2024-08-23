@@ -28,15 +28,15 @@ function App() {
 
             </Header>
 
-
-            <Routes>
-                <Route path="/" element={<Main/>}/>
-                <Route path="/posts" element={<Posts/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/reg" element={<Registration/>}/>
-                <Route path='*' element={<NotFoundPage/>}/>
-            </Routes>
-
+            <main id="main">
+                <Routes>
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="/posts" element={<Posts/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/reg" element={<Registration/>}/>
+                    <Route path='*' element={<NotFoundPage/>}/>
+                </Routes>
+            </main>
 
 
         </BrowserRouter>

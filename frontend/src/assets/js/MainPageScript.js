@@ -1,3 +1,5 @@
+
+
 function handleResize() {
     const newStatisticDiv = document.getElementById('newStatisticDiv');
     const statisticDiv = document.getElementById('statisticDiv');
@@ -23,7 +25,7 @@ function tooltipLogic() {
         const statisticItem = trigger.closest('.statistic_item');
 
         if (isTextOverflowing(trigger)) {
-            if (!statisticItem.hasAttribute("data-tooltip")){
+            if (!statisticItem.hasAttribute("data-tooltip")) {
                 statisticItem.setAttribute("data-tooltip", statisticItem.getAttribute("data-tooltip-copy"))
             }
             return 0;

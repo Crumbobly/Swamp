@@ -7,7 +7,6 @@ import Links from "./Links";
 import IconsBlock from "./IconsBlock";
 
 
-
 function Header() {
     const [expanded, setExpanded] = useState(false);
 
@@ -17,7 +16,7 @@ function Header() {
 
     return (
         <>
-            <header className="header">
+            <header className="header" id="header">
 
                 <nav className="navbar navbar-dark pb-0 pb-sm-2">
 

@@ -16,13 +16,12 @@ export default function Posts() {
     }, []);
 
 
-
     return (
 
-        <main>
-            <div style={{height: 1000+"px", backgroundColor:"honeydew"}}></div>
-            <div style={{height: 1000+"px", backgroundColor:"lightpink"}}></div>
+        <>
+            <div style={{height: 100 + "px", backgroundColor: "honeydew"}} id="DDD"></div>
+            <div style={{height: 1000 + "px", backgroundColor: "lightpink"}}></div>
 
-        </main>
+        </>
     )
 }
