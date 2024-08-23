@@ -5,3 +5,9 @@
     flex-basis: auto;
 }
 
+.main-wrapper{
+    background-color: var(--white-grey);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

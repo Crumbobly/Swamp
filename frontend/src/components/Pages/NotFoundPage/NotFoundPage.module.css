@@ -1,26 +1,32 @@
-.img_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-}
+
 
 .wrapper{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     background-color: var(--white-grey);
 }
 
-.img_container img {
-    width: 50%;
-    height: auto; /* Сначала задаем ширину 50% и сохраняем соотношение сторон */
 
+.img_container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-aspect-ratio: 1/1) { /* Условие, когда ширина больше высоты */
+.img_container img {
+    /* Default to 50% width and auto height */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Media query to handle the case where height is greater than width */
+@media (min-aspect-ratio: 1/1) {
     .img_container img {
-        width: auto; /* Убираем фиксированную ширину */
-        height: 50%; /* Задаем высоту 50% */
+        width: 50%;
+        height: auto;
     }
 }

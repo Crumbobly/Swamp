@@ -25,24 +25,25 @@ function Main() {
 
     return (
 
+        <div className="main-wrapper">
+            <div className="row mx-2 mx-md-4 pb-0 d-flex overflow-hidden h-100">
 
-        <div className="row mx-2 mx-md-4 pb-0 d-flex overflow-hidden h-100">
+                <div className="col col-auto col-xl-2 col-lg-3 p-0 mt-0 h-100 py-md-3"
+                     id="parentStatisticDiv">
+                    <Statistics/>
+                </div>
 
-            <div className="col col-auto col-xl-2 col-lg-3 p-0 mt-0 h-100 py-md-3"
-                 id="parentStatisticDiv">
-                <Statistics/>
+                <div className="col col-12 col-xl-10 col-lg-9 p-0 ps-lg-3 d-flex overflow-hidden h-100">
+
+                    <Scrollable class="cut-height-scrollbar">
+                        <MainPageContent>
+
+                        </MainPageContent>
+                    </Scrollable>
+
+                </div>
+
             </div>
-
-            <div className="col col-12 col-xl-10 col-lg-9 p-0 ps-lg-3 d-flex overflow-hidden h-100">
-
-                <Scrollable class="cut-height-scrollbar">
-                    <MainPageContent>
-
-                    </MainPageContent>
-                </Scrollable>
-
-            </div>
-
         </div>
 
 
