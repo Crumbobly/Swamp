@@ -1,6 +1,15 @@
-#statisticDiv{
-
+#statisticDivWrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
+
+#statisticDiv{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
 
 /*.col {*/
 /*    flex-grow: 1;*/

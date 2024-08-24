@@ -22,27 +22,29 @@ function Main() {
     }, []);
 
 
-
     return (
 
         <div className="main-inner">
             <div className="mx-2 mx-md-4 pb-0 d-flex flex-row ">
 
-                <div className="d-flex flex-column " id="statisticDiv">
-                    <Statistics>
+                <div id="statisticDivWrapper">
+                    <div className="my-3" id="statisticDiv">
+                        <Statistics>
 
-                    </Statistics>
+                        </Statistics>
+                    </div>
                 </div>
 
-                <div className="d-flex flex-column">
+
+                <div className="d-flex flex-column ps-3 " id="mainContentWrapper">
                     <MainPageContent>
 
                     </MainPageContent>
                 </div>
 
+
             </div>
         </div>
-
 
 
     )
