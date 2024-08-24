@@ -5,11 +5,11 @@ import img from "../../../../assets/images/swamp.svg"
 function Content() {
     return (
         <>
-            <div className={`background_rounded h-50 mt-3 ${styles.img_container}`}>
+            <div className={`background_rounded mt-3 ${styles.img_container}`} >
                 <img src={img} alt="Болото фон"/>
             </div>
 
-            <div className="minh-25 d-flex mt-3">
+            <div className=" d-flex mt-3">
                 <div className={`background_rounded bg-white flex-1 `} id="news">
                     <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
                         <h6 className="m-0">Новости</h6>
@@ -52,7 +52,7 @@ function Content() {
                 </div>
             </div>
 
-            <div className="minh-25 d-flex mt-3">
+            <div className=" d-flex mt-3">
                 <div className={`background_rounded bg-white flex-1`} id="info">
                     <div className={`rounded-top-4 py-2 ps-4 ${styles.site_info_div}`}>
                         <h6 className="m-0">Информация о сайте</h6>

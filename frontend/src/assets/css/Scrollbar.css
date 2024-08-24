@@ -10,12 +10,8 @@
 
 ::-webkit-scrollbar-track{
     background-color: var(--dark-grey);
-}
-
-.cut-height-scrollbar::-webkit-scrollbar-track
-{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    /*margin-bottom: 1rem;*/
+    /*margin-top: 1rem;*/
 }
 
 ::-webkit-scrollbar-thumb{

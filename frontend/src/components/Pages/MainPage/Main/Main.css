@@ -1,13 +1,18 @@
+#statisticDiv{
 
-.col {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
 }
 
-.main-wrapper{
+/*.col {*/
+/*    flex-grow: 1;*/
+/*    flex-shrink: 1;*/
+/*    flex-basis: auto;*/
+/*}*/
+
+.main-inner{
     background-color: var(--white-grey);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
+
+
