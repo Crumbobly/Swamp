@@ -19,8 +19,11 @@ export default function Posts() {
     return (
 
         <>
-            <div style={{height: 100 + "px", backgroundColor: "honeydew"}} id="DDD"></div>
-            <div style={{height: 1000 + "px", backgroundColor: "lightpink"}}></div>
+            <div className="m-3">
+                <div className="post_del mb-3 background_rounded"></div>
+                <div className="post_del mb-3 background_rounded"></div>
+                <div className="post_del background_rounded"></div>
+            </div>
 
         </>
     )

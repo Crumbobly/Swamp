@@ -13,3 +13,8 @@
     border-radius: 1rem;
 }
 
+.post_del{
+    height: 500px;
+    background-color: var(--white);
+}
+

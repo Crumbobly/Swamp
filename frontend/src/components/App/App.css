@@ -25,7 +25,8 @@ html, body{
 #root{
     min-height: 100%;
     display: flex;
-
+    background-color: var(--white-grey);
+    z-index: -1;
 }
 
 body {

@@ -24,7 +24,7 @@ function handleResize() {
 
     if (newStatisticDiv && statisticDiv && statisticDivWrapper) {
         console.log(window.innerWidth)
-        if (window.innerWidth < 991) {
+        if (window.innerWidth < 992) {
 
             if (!newStatisticDiv.contains(statisticDiv)) {
                 newStatisticDiv.appendChild(statisticDiv);
