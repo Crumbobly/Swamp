@@ -35,7 +35,7 @@ function Main() {
                 </div>
 
 
-                <div className="ps-3" id="mainContentWrapper">
+                <div className="ps-lg-3" id="mainContentWrapper">
                     <MainPageContent>
 
                     </MainPageContent>

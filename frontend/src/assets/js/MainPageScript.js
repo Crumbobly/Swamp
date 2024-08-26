@@ -7,22 +7,30 @@ function setMainMargin() {
     const mainContentWrapper = $("#mainContentWrapper")
     const statisticDivWidth = statisticDiv.width()
 
-    statisticDivWrapper.css("margin-top", headerHeight + "px");
-    mainContentWrapper.css("margin-left", statisticDivWidth + "px")
+    if (statisticDivWrapper.children().length ) {
+        statisticDivWrapper.css("margin-top", headerHeight + "px");
+        mainContentWrapper.css("margin-left", statisticDivWidth + "px")
+    }
+    else {
+        statisticDivWrapper.css("margin-top", 0 + "px");
+        mainContentWrapper.css("margin-left", 0 + "px")
+    }
 }
 
 function handleResize() {
     const newStatisticDiv = document.getElementById('newStatisticDiv');
     const statisticDiv = document.getElementById('statisticDiv');
-    const parentStatisticDiv = document.getElementById('parentStatisticDiv');
+    const statisticDivWrapper = document.getElementById('statisticDivWrapper');
 
-    if (newStatisticDiv && statisticDiv && parentStatisticDiv) {
+    if (newStatisticDiv && statisticDiv && statisticDivWrapper) {
+        console.log(window.innerWidth)
         if (window.innerWidth < 991) {
+
             if (!newStatisticDiv.contains(statisticDiv)) {
                 newStatisticDiv.appendChild(statisticDiv);
             }
         } else {
-            parentStatisticDiv.appendChild(statisticDiv);
+            statisticDivWrapper.appendChild(statisticDiv);
         }
     } else {
         return 0;
