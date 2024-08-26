@@ -1,4 +1,15 @@
+import $ from "jquery"
 
+function setMainMargin() {
+    const headerHeight = $("#header").outerHeight();
+    const statisticDivWrapper = $("#statisticDivWrapper")
+    const statisticDiv = $("#statisticDiv")
+    const mainContentWrapper = $("#mainContentWrapper")
+    const statisticDivWidth = statisticDiv.width()
+
+    statisticDivWrapper.css("margin-top", headerHeight + "px");
+    mainContentWrapper.css("margin-left", statisticDivWidth + "px")
+}
 
 function handleResize() {
     const newStatisticDiv = document.getElementById('newStatisticDiv');
@@ -43,14 +54,17 @@ function tooltipLogic() {
 function initScript() {
     tooltipLogic();
     handleResize();
+    setMainMargin()
 
     window.addEventListener('resize', handleResize);
     window.addEventListener('resize', tooltipLogic);
+    window.addEventListener('resize', setMainMargin);
 }
 
 function destroyScript() {
     window.removeEventListener('resize', handleResize);
     window.removeEventListener('resize', tooltipLogic);
+    window.removeEventListener('resize', setMainMargin);
 }
 
 export const InitMainPageScript = () => initScript();

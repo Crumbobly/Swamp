@@ -3,7 +3,6 @@ import React, {useEffect} from "react";
 import './Main.css'
 
 import Statistics from "../Statistics/Statistics";
-import Scrollable from '../../../Scrollable/Scrollable'
 import MainPageContent from '../Content/Content'
 
 import {InitMainPageScript, DestroyMainPageScript} from '../../../../assets/js/MainPageScript'
@@ -36,7 +35,7 @@ function Main() {
                 </div>
 
 
-                <div className="d-flex flex-column ps-3 " id="mainContentWrapper">
+                <div className="ps-3" id="mainContentWrapper">
                     <MainPageContent>
 
                     </MainPageContent>

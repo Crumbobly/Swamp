@@ -12,7 +12,7 @@ export default function Statistics() {
 
     return (
 
-        <div className="px-3 pb-3 background_rounded bg-white " id="statisticDiv">
+        <div className="px-3 pb-3 background_rounded bg-white h-100">
 
             <div className="text mb-3">
                 <p>Статистика</p>
