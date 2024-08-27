@@ -20,12 +20,13 @@
 
 html, body{
     height: 100%;
+    background-color: var(--white-grey);
 }
 
 #root{
+    background-color: var(--white-grey);
     min-height: 100%;
     display: flex;
-    background-color: var(--white-grey);
     z-index: -1;
 }
 

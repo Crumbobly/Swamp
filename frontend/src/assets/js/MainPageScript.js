@@ -23,7 +23,7 @@ function handleResize() {
     const statisticDivWrapper = document.getElementById('statisticDivWrapper');
 
     if (newStatisticDiv && statisticDiv && statisticDivWrapper) {
-        console.log(window.innerWidth)
+
         if (window.innerWidth < 992) {
 
             if (!newStatisticDiv.contains(statisticDiv)) {

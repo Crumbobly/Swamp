@@ -1,7 +1,7 @@
 import './Posts.css';
-import Scrollable from "../../Scrollable/Scrollable";
 import React, {useEffect} from "react";
 import {DestroyPostsPageScript, InitPostsPageScript} from "../../../assets/js/PostsPageScript";
+import PostComponent from "./PostComponent/PostComponent";
 
 export default function Posts() {
 
@@ -18,13 +18,12 @@ export default function Posts() {
 
     return (
 
-        <>
-            <div className="m-3">
-                <div className="post_del mb-3 background_rounded"></div>
-                <div className="post_del mb-3 background_rounded"></div>
-                <div className="post_del background_rounded"></div>
-            </div>
+        <div className="mx-3 mt-3">
+            <PostComponent/>
+            <PostComponent/>
+            <PostComponent/>
 
-        </>
+        </div>
+
     )
 }
