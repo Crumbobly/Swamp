@@ -19,7 +19,8 @@
 }
 
 .post_component_footer{
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .user_icon{
@@ -34,4 +35,24 @@
     margin-top: .5rem;
     height: 1px;
     background-color: var(--light-grey);
+}
+.wrap-tag{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.grade-block{
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+  
+}
+.grade-block img{
+    display: inline;
+}
+.tag{
+    /* display: flex; */
+    width: 100%;
 }
