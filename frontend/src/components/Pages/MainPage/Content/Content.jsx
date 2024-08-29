@@ -15,7 +15,7 @@ function Content() {
                         <h6 className="m-0">Новости</h6>
                     </div>
 
-                    <p className="ps-4 pb-3 mb-0">
+                    <p className="px-4 pb-3 mb-0">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                     andae soluta tenetur.
                         possimus quam qui ratione recusandae soluta tenetur.
@@ -42,7 +42,7 @@ function Content() {
                         <h6 className="m-0">Информация о сайте</h6>
                     </div>
 
-                    <p className="ps-4 pb-3 mb-0">
+                    <p className="px-4 pb-3 mb-0">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                         consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at
                         consequuntur dolorem, doloremque ducimus ea fugiat incidunt magnam, modi nemo non odit      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, at

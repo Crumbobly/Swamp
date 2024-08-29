@@ -30,18 +30,28 @@ function PostComponent() {
             <div className={style.line} />
 
             <div className={style.post_component_footer}>
-                {/* <div className="wrap-tag"> */}
-                    <div className="tag">
-                        <p className="fw-light mb-0">Россия, Ирак, миграция, иностранец, ...</p>
+
+                <div>
+
+                    <div className={style.tag_block}>
+                        <a href="#">Россия,</a>
+                        <a>Ирак,</a>
+                        <a>Миграция,</a>
+                        <a>Иностранец,</a>
+                        <a>FFfdfsdfdsf,</a>
+                        <a>efw,</a>
+                        <a>regewfwer,</a>
+                        <a>efwefew-efwefwefas</a>
                     </div>
 
-                    <div className="grade-block">
-                        <img src={comm_icon} width="21x" height="21px"  style={{marginRight:"0.2rem"}}></img>
-                        <img src={like_icon} width="21px" height="21px" style={{marginRight:"0.2rem"}}></img>
-                        <img src={dislike_icon} width="21px" height="21px"></img>
-                    </div> 
+                    <div className="d-inline float-end">
+                        <img src={comm_icon} className="me-1" width="18px" height="18px" alt="comment"></img>
+                        <img src={like_icon} className="me-1" width="18px" height="18px" alt="like"></img>
+                        <img src={dislike_icon} className="me-2" width="18px" height="18px" alt="dislike"></img>
+                    </div>
+
                 </div>
-            {/* </div> */}
+            </div>
 
 
         </div>
