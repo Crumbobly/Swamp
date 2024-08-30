@@ -42,9 +42,18 @@ function PostComponent() {
                         <a>efw,</a>
                         <a>regewfwer,</a>
                         <a>efwefew-efwefwefas</a>
+                        <a>regewfwer,</a>
+                        <a>efwefew-efwefwefas</a>
+                        <a>regewfwer,</a>
+                        <a>regewfwer,</a>
+                        <a>regewfwer,</a>
+                        <a>regewfwer,</a>
+                        <a>regewfwer,</a>
+                        <a>regewfwer,</a>
+                      
                     </div>
 
-                    <div className="d-inline float-end">
+                    <div className={style.grade_block}>
                         <img src={comm_icon} className="me-1" width="18px" height="18px" alt="comment"></img>
                         <img src={like_icon} className="me-1" width="18px" height="18px" alt="like"></img>
                         <img src={dislike_icon} className="me-2" width="18px" height="18px" alt="dislike"></img>

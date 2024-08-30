@@ -35,7 +35,13 @@
 }
 
 .tag_block{
-    display: inline;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+   max-width: 1060px;
+    width: 100%;
 }
 
 .tag_block a{
@@ -43,4 +49,24 @@
     font-size: .9rem;
     font-weight: lighter;
     text-decoration: none;
+}
+.grade_block{
+    display: inline;
+    float:inline-end;
+}
+@media only screen and (max-width:673px){
+    .grade_block {
+        display: block;
+        float: none;
+        padding-top: 0.4rem;
+      }
+      .tag_block {
+        display: inline-block;
+        max-width:320px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
 }
